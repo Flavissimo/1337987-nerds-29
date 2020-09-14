@@ -1,12 +1,128 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<html class="page" lang="ru">
+<!--Валидацию код прошел-->
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+  <!--Скрепила с CSS, работает-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<body class="page-body">
+  <!--Блок навигации-->
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="#" class="main-header-logo">
+        <img src="https://via.placeholder.com/160x49" alt="Logo" class="logo">
+      </a>
+      <ul class="site-navigation">
+        <li class="list-navigation"><a class="link-navigation" href="#">Студия</a></li>
+        <li class="list-navigation"><a class="link-navigation" href="#">Клиенты</a></li>
+        <li class="list-navigation"><a class="link-navigation" href="catalog.html">Магазин</a></li>
+        <li class="list-navigation"><a class="link-navigation" href="#">Контакты</a></li>
+        <!--Здесь будет иконка-->
+        <li class="list-navigation"><a class="link-navigation" href="#">Корзина</a></li>
+      </ul>
+    </nav>
+    <!--Блок презентация_обертка-->
+    <div class="main-header-representation">
+      <!--Блок о компании-->
+      <div class="main-header-about">
+        <h1>Долго, дорого, скурпулезно</h1>
+        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+      </div>
+      <!--Блок со слайдами-->
+      <div class="main-header-slide">
+        <img class="slide" src="https://via.placeholder.com/760x431" alt="Slide">
+      </div>
+    </div>
+  </header>
+  <!--Блок контейнер-основная информация-->
+  <main class="container">
+    <!--Блок предложений-->
+    <div class="offers">
+      <ul class="list-offers">
+        <li><a class="link-offers" href="">
+            <img class="img-offers" src="https://via.placeholder.com/300x140" alt="Web-sites">
+            <h3>Веб-сайты</h3>
+          </a>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт! </p>
+          <button type="button" class="button-websites">Заказать</button>
+        </li>
+        <li><a class="link-offers" href="">
+            <img class="img-offers" src="https://via.placeholder.com/300x140" alt="Applications">
+            <h3>Приложения</h3>
+          </a>
+          <p>Покорите топ-10 приложений в AppStore и Google Play </p>
+          <button type="button" class="button-applications">Заказать</button>
+        </li>
+        <li><a class="link-offers" href="">
+            <img class="img-offers" src="https://via.placeholder.com/300x140" alt="Presentetion">
+            <h3>Презентации</h3>
+          </a>
+          <p>Вы даже не подозреваете, насколько вы изумительны! </p>
+          <button type="button" class="button-presentation">Заказать</button>
+        </li>
+      </ul>
+    </div>
+    <!--Блок преимуществ-->
+    <div class="advantages">
+      <section class="about-advantages">
+        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,
+          как роботы. </p>
+        <h4>Выполняем заказы на разработку:</h4>
+        <ul>
+          <li>Веб-сайтов любой сложности</li>
+          <li>Мобильных приложений для IOS и Android</li>
+          <li>Слайдшоу и видео для корпоративных мероприятий</li>
+        </ul>
+      </section>
+      <div class="statistics-adventages">
+        <img class="logo-with-color" src="https://via.placeholder.com/360x208" alt="Logo-with-color">
+        <h4>С 2004 года любим точность во всем:</h4>
+        <!--Не понимаю, как скомпонован блок: это цифры или картинки?-->
+        <p>146% Уровень самоотдачи</p>
+        <p>100% Соблюдение сроков</p>
+        <p>50% Минимальная предоплата</p>
+      </div>
+    </div>
+    <!--Блок партнеров-->
+    <div class="partners">
+      <a class="link-partners" href="htmlacademy.ru/intensive/htmlcss"><img class="img-partners" src="https://via.placeholder.com/209x90" alt="Logo-HTMLAcademy"></a>
+      <a class="link-partners" href="#"><img class="img-partners" src="https://via.placeholder.com/209x90" alt="Logo-Borodinski"></a>
+      <a class="link-partners" href="#"><img class="img-partners" src="https://via.placeholder.com/209x90" alt="Logo-Pink"></a>
+      <a class="link-partners" href="#"><img class="img-partners" src="https://via.placeholder.com/209x90" alt="Logo-Mishka"></a>
+    </div>
+    <!--Блок контакты/карта-->
+    <div class="contacts">
+      <!--Предполагаю, что карта - это картинка на заднем фоне? Не интерактив?-->
+      <section class="contacts-info">
+        <h3>Nerds Design Studio</h3>
+        <p>191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8 </p>
+        <a href="tell:+78122757575">тел. +7(812) 275-75-75</a><br>
+        <button class="button-contacts" type="button">Напишите нам</button>
+      </section>
+    </div>
+  </main>
+  <!--Подвал-->
+  <footer class="main-footer">
+    <div class="footer-social">
+      <ul class="list-footer">
+        <!--Здесь будут иконки соц. сетей-->
+        <li><a class="link-footer" href="#">Вконтакте</a></li>
+        <li><a class="link-footer" href="#">Фейсбук</a></li>
+        <li><a class="link-footer" href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <section class="footer-text">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей. </p>
+    </section>
+  </footer>
 
-  </body>
+</body>
+
 </html>

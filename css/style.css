@@ -1,0 +1,32 @@
+/*директива для шрифта
+не работает RobotoBold, почему? Вложенность верная?*/
+@fon-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+    url("/fonts/roboto.woff2") format("woff2"),
+    url("/fonts/roboto.woff") format("woff");
+}
+@fon-face {
+  font-family: 'RobotoBold';
+  font-style: normal;
+  font-weight: 700;
+  src: local("RobotoBold"),
+    url("/fonts/robotobold.woff2") format("woff2"),
+    url("/fonts/robotobold.woff") format("woff");
+}
+@fon-face {
+  font-family: 'RobotoMedium';
+  font-style: normal;
+  font-weight: 500;
+  src: local("RobotoMedium"),
+    url("/fonts/robotomedium.woff2") format("woff2"),
+    url("/fonts/robotomedium.woff") format("woff");
+}
+.proverka{
+  font-family: 'RobotoBold', Arial, sans-serif;
+  color: green;
+  text-align: center;
+  font-style: oblique;
+}
