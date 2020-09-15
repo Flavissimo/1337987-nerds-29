@@ -24,9 +24,14 @@
     url("/fonts/robotomedium.woff2") format("woff2"),
     url("/fonts/robotomedium.woff") format("woff");
 }
-.proverka{
+
+.proverka {
   font-family: 'RobotoBold', Arial, sans-serif;
   color: green;
   text-align: center;
   font-style: oblique;
+}
+
+body {
+  font-family: 'RobotoBold', Arial, sans-serif;
 }
