@@ -39,13 +39,13 @@
         ОТ<input type="text" name="number-min" value="0" id="number">
         ДО<input type="text" name="number-max" value="15000">
         <br>
-        <label for=" radio">СЕТКА:</label><br>
+        <label for="radio">СЕТКА:</label><br>
         <input type="radio" name="grid" value="rad1" id="radio">Адаптивная <br>
         <input type="radio" name="grid" value="rad2">Фиксированная <br>
         <input type="radio" name="grid" value="rad3">Резиновая <br>
         <br>
-        <label for=" featurs">ОСОБЕННОСТИ:</label><br>
-        <input type="checkbox" name="slider" value="a1" checked>Слайдер<br>
+        <label for="featurs">ОСОБЕННОСТИ:</label><br>
+        <input type="checkbox" name="slider" value="a1" id="featurs" checked>Слайдер<br>
         <input type="checkbox" name="adventages" value="a2">Блок преимущесвт<br>
         <input type="checkbox" name="news" value="a3" checked>Новости<br>
         <input type="checkbox" name="gallery" value="a4">Галерея<br>
@@ -56,15 +56,99 @@
     </aside>
     <!--Блок основного наполнения-->
     <div class="main-catalog">
-      <table id="grid">
-        <thead>
-          <tr>
-            <th data-type="number">Возраст</th>
-            <th data-type="string">Имя</th>
-          </tr>
-        </thead>
-      </table </div>
+      <!--Таблица сортировки? Не уверена, спросить-->
+      <div class="main-sort">
+        <h3>СОРТИРОВАТЬ:</h3>
+        <table id="grid">
+          <thead>
+            <tr>
+              <th data-type="price">ПО ЦЕНЕ</th>
+              <th data-type="type">ПО ТИПУ</th>
+              <th data-type="denomination">ПО НАЗВАНИЮ</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <!--Основной контент-галерея-->
+      <div class="main-block">
+        <div class="block">
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a><br>
+          <img src="https://via.placeholder.com/358x305" alt="gallery">
+          <!--Всплывающее окно?-->
+          <div class="popap-gallery">
+            <h3>SEDONA</h3>
+            <p>Информационный сайт для туристов</p>
+            <button type="button" name="price-button">КУПИТЬ</button>
+          </div>
+        </div>
+        <div class="block">
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <img src="https://via.placeholder.com/358x516" alt="gallery">
+        </div>
+        <div class="block">
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <img src="https://via.placeholder.com/358x516" alt="gallery">
+        </div>
+        <div class="block">
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <img src="https://via.placeholder.com/358x516" alt="gallery">
+        </div>
+        <div class="block">
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <img src="https://via.placeholder.com/358x516" alt="gallery">
+        </div>
+        <div class="block">
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <a href="#" class="gallery-path"></a>
+          <img src="https://via.placeholder.com/358x516" alt="gallery">
+        </div>
+      </div>
+      <br>
+      <!--Прокрутка страниц-->
+      <div class="next-page">
+        <a href="#" class="gallery-page">1</a>
+        <a href="#" class="gallery-page">2</a>
+        <a href="#" class="gallery-page">3</a>
+        <a href="#" class="gallery-next">СЛЕДУЩАЯ</a>
+      </div>
     </div>
+  </div>
+  <div class="contacts">
+    <!--Картинка карты в бэке-->
+    <section class="contacts-info">
+      <h3>Nerds Design Studio</h3>
+      <p>191186, Санкт-Петербург,
+        ул. Б. Конюшенная, д. 19/8 </p>
+      <a href="tel:+78122757575">тел. +7(812) 275-75-75</a><br>
+      <button class="button-contacts" type="button">Напишите нам</button>
+    </section>
+  </div>
+  <br>
+  <footer class="main-footer">
+    <div class="footer-social">
+      <ul class="list-footer">
+        <!--Здесь будут иконки соц. сетей-->
+        <li><a class="link-footer" href="#">Вконтакте</a></li>
+        <li><a class="link-footer" href="#">Фейсбук</a></li>
+        <li><a class="link-footer" href="#">Инстаграм</a></li>
+      </ul>
+    </div>
+    <section class="footer-text">
+      <h2>Давайте дружить, это выгодно!</h2>
+      <p>Скидка 10% для друзей из социальных сетей. </p>
+    </section>
+  </footer>
 </body>
 
 </html>

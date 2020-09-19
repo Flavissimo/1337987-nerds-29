@@ -1,5 +1,3 @@
-/*директива для шрифта
-не работает RobotoBold, почему? Вложенность верная?*/
 @fon-face {
   font-family: 'Roboto';
   font-style: normal;
@@ -8,6 +6,7 @@
     url("/fonts/roboto.woff2") format("woff2"),
     url("/fonts/roboto.woff") format("woff");
 }
+
 @fon-face {
   font-family: 'RobotoBold';
   font-style: normal;
@@ -16,6 +15,7 @@
     url("/fonts/robotobold.woff2") format("woff2"),
     url("/fonts/robotobold.woff") format("woff");
 }
+
 @fon-face {
   font-family: 'RobotoMedium';
   font-style: normal;
@@ -25,13 +25,66 @@
     url("/fonts/robotomedium.woff") format("woff");
 }
 
-.proverka {
-  font-family: 'RobotoBold', Arial, sans-serif;
-  color: green;
-  text-align: center;
-  font-style: oblique;
+* {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
 }
 
+html,
 body {
-  font-family: 'RobotoBold', Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+
+.gallery-path {
+  position: relative;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  background: grey;
+  border-radius: 50%;
+}
+
+.block {
+  border: 1px solid black;
+  width: 358px;
+  height: 556px;
+}
+
+.popap-gallery {
+  background: green;
+  opacity: 0.5;
+  height: 211px;
+  color: black;
+}
+
+.gallery-page {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  color: black;
+  background: #DBDBDB;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.gallery-next {
+  position: relative;
+  display: inline-block;
+  width: 260px;
+  height: 50px;
+  color: black;
+  background: #DBDBDB;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.gallery-page,
+.gallery-next:hover {
+  border: 3px solid #DBDBDB;
+  background: white;
 }
