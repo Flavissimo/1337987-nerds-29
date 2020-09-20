@@ -24,6 +24,10 @@
     url("/fonts/robotomedium.woff2") format("woff2"),
     url("/fonts/robotomedium.woff") format("woff");
 }
+:root{
+  --basic-color: #EEEEEE;
+  --font-neutral-black: #000000;
+}
 
 * {
   text-decoration: none;
@@ -37,6 +41,23 @@ body {
   position: relative;
   width: auto;
   height: auto;
+}
+.main-sort {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.menu-sort{
+display: flex;
+list-style: none;
+}
+.menu-list-sort{
+  margin: 10px 40px;
+}
+.menu-link-sort{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--font-neutral-black);
 }
 
 .gallery-path {
@@ -52,13 +73,6 @@ body {
   border: 1px solid black;
   width: 358px;
   height: 556px;
-}
-
-.popap-gallery {
-  background: green;
-  opacity: 0.5;
-  height: 211px;
-  color: black;
 }
 
 .gallery-page {

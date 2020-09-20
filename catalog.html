@@ -44,9 +44,9 @@
         <input type="radio" name="grid" value="rad2">Фиксированная <br>
         <input type="radio" name="grid" value="rad3">Резиновая <br>
         <br>
-        <label for="featurs">ОСОБЕННОСТИ:</label><br>
-        <input type="checkbox" name="slider" value="a1" id="featurs" checked>Слайдер<br>
-        <input type="checkbox" name="adventages" value="a2">Блок преимущесвт<br>
+        <label for="features">ОСОБЕННОСТИ:</label><br>
+        <input type="checkbox" name="slider" value="a1" id="features" checked>Слайдер<br>
+        <input type="checkbox" name="advantages" value="a2">Блок преимущесвт<br>
         <input type="checkbox" name="news" value="a3" checked>Новости<br>
         <input type="checkbox" name="gallery" value="a4">Галерея<br>
         <input type="checkbox" name="basket" value="a5">Корзина<br>
@@ -56,18 +56,14 @@
     </aside>
     <!--Блок основного наполнения-->
     <div class="main-catalog">
-      <!--Таблица сортировки? Не уверена, спросить-->
+      <!--Меню сортировки-->
       <div class="main-sort">
         <h3>СОРТИРОВАТЬ:</h3>
-        <table id="grid">
-          <thead>
-            <tr>
-              <th data-type="price">ПО ЦЕНЕ</th>
-              <th data-type="type">ПО ТИПУ</th>
-              <th data-type="denomination">ПО НАЗВАНИЮ</th>
-            </tr>
-          </thead>
-        </table>
+        <ul class="menu-sort">
+          <li class="menu-list-sort"><a href="#" class="menu-link-sort">По цене</a></li>
+          <li class="menu-list-sort"><a href="#" class="menu-link-sort">По типу</a></li>
+          <li class="menu-list-sort"><a href="#" class="menu-link-sort">По названию</a></li>
+        </ul>
       </div>
       <!--Основной контент-галерея-->
       <div class="main-block">
@@ -75,13 +71,8 @@
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a><br>
-          <img src="https://via.placeholder.com/358x305" alt="gallery">
-          <!--Всплывающее окно?-->
-          <div class="popap-gallery">
-            <h3>SEDONA</h3>
-            <p>Информационный сайт для туристов</p>
-            <button type="button" name="price-button">КУПИТЬ</button>
-          </div>
+          <img src="https://via.placeholder.com/358x516" alt="gallery">
+          <!--Всплывающее окно-->
         </div>
         <div class="block">
           <a href="#" class="gallery-path"></a>
@@ -116,7 +107,7 @@
       </div>
       <br>
       <!--Прокрутка страниц-->
-      <div class="next-page">
+      <div class="gallery-pagination">
         <a href="#" class="gallery-page">1</a>
         <a href="#" class="gallery-page">2</a>
         <a href="#" class="gallery-page">3</a>
@@ -149,6 +140,12 @@
       <p>Скидка 10% для друзей из социальных сетей. </p>
     </section>
   </footer>
+    <!--ПопАп с ценой в галерее
+  <section class="popap-gallery">
+    <h3>SEDONA</h3>
+    <p>Информационный сайт для туристов</p>
+    <button type="button" name="price-button">КУПИТЬ</button>
+  </section> -->
 </body>
 
 </html>
