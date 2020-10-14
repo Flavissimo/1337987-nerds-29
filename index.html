@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
 <!--Валидацию код прошел-->
+
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
@@ -14,10 +15,10 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a href="#" class="main-header-logo">
-        <img src="https://via.placeholder.com/160x49" alt="Logo" class="logo">
+        <img src="img/nerds-logo.png" alt="Logo" class="logo">
       </a>
       <ul class="site-navigation">
-        <li class="list-navigation"><a class="link-navigation" href="#">Студия</a></li>
+        <li class="list-navigation"><a class="link-navigation" href="index.html">Студия</a></li>
         <li class="list-navigation"><a class="link-navigation" href="#">Клиенты</a></li>
         <li class="list-navigation"><a class="link-navigation" href="catalog.html">Магазин</a></li>
         <li class="list-navigation"><a class="link-navigation" href="#">Контакты</a></li>
@@ -29,12 +30,15 @@
     <div class="main-header-representation">
       <!--Блок о компании-->
       <div class="main-header-about">
-        <h1>Долго, дорого, скурпулезно</h1>
+        <h1>Долго, дорого, <br>скурпулезно</h1>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
+        <form method="post" class="main-header-button">
+          <button type="button" value="learn more" class="main-header-btn">Узнать больше</button>
+        </form>
       </div>
       <!--Блок со слайдами-->
       <div class="main-header-slide">
-        <img class="slide" src="https://via.placeholder.com/760x431" alt="Slide">
+        <img class="slide" src="img/nerds-index-slide1 1.png" alt="Slide" class="main-header-slide-img">
       </div>
     </div>
   </header>
@@ -44,21 +48,21 @@
     <div class="offers">
       <ul class="list-offers">
         <li><a class="link-offers" href="">
-            <img class="img-offers" src="https://via.placeholder.com/300x140" alt="Web-sites">
+            <img class="img-offers" src="img/illustration-1 1.png" alt="Web-sites">
             <h3>Веб-сайты</h3>
           </a>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт! </p>
           <button type="button" class="button-websites">Заказать</button>
         </li>
         <li><a class="link-offers" href="">
-            <img class="img-offers" src="https://via.placeholder.com/300x140" alt="Applications">
+            <img class="img-offers" src="img/illustration-2 1.png" alt="Applications">
             <h3>Приложения</h3>
           </a>
           <p>Покорите топ-10 приложений в AppStore и Google Play </p>
           <button type="button" class="button-applications">Заказать</button>
         </li>
         <li><a class="link-offers" href="">
-            <img class="img-offers" src="https://via.placeholder.com/300x140" alt="Presentetion">
+            <img class="img-offers" src="img/illustration-3 1.png" alt="Presentetion">
             <h3>Презентации</h3>
           </a>
           <p>Вы даже не подозреваете, насколько вы изумительны! </p>
@@ -73,27 +77,27 @@
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,
           как роботы. </p>
         <h4>Выполняем заказы на разработку:</h4>
-        <ul>
+        <ul class="list-advantages">
           <li>Веб-сайтов любой сложности</li>
           <li>Мобильных приложений для IOS и Android</li>
           <li>Слайдшоу и видео для корпоративных мероприятий</li>
         </ul>
       </section>
       <div class="statistics-adventages">
-        <img class="logo-with-color" src="https://via.placeholder.com/360x208" alt="Logo-with-color">
+        <img class="logo-with-color" src="img/nerds-illustration 1.png" alt="Logo-with-color">
         <h4>С 2004 года любим точность во всем:</h4>
-        <!--Не понимаю, как скомпонован блок: это цифры или картинки?-->
-        <p>146% Уровень самоотдачи</p>
-        <p>100% Соблюдение сроков</p>
-        <p>50% Минимальная предоплата</p>
+        <p class="statistic-numeral">146%</p><p> Уровень самоотдачи</p>
+        <p class="statistic-numeral">100%</p><p>Соблюдение сроков</p>
+        <p class="statistic-numeral">50%</p><p>Минимальная предоплата</p>
+        <!--СПОРНЫЙ МОМЕНТ, СПРОСИТЬ-->
       </div>
     </div>
     <!--Блок партнеров-->
     <div class="partners">
-      <a class="link-partners" href="htmlacademy.ru/intensive/htmlcss"><img class="img-partners" src="https://via.placeholder.com/209x90" alt="Logo-HTMLAcademy"></a>
-      <a class="link-partners" href="#"><img class="img-partners" src="https://via.placeholder.com/209x90" alt="Logo-Borodinski"></a>
-      <a class="link-partners" href="#"><img class="img-partners" src="https://via.placeholder.com/209x90" alt="Logo-Pink"></a>
-      <a class="link-partners" href="#"><img class="img-partners" src="https://via.placeholder.com/209x90" alt="Logo-Mishka"></a>
+      <a class="link-partners" href="htmlacademy.ru/intensive/htmlcss"><img class="img-partners" src="img/html_logo.png" alt="Logo-HTMLAcademy"></a>
+      <a class="link-partners" href="#"><img class="img-partners" src="img/borodinski_logo.png" alt="Logo-Borodinski"></a>
+      <a class="link-partners" href="#"><img class="img-partners" src="img/pink_logo.png" alt="Logo-Pink"></a>
+      <a class="link-partners" href="#"><img class="img-partners" src="img/mishka_logo.png" alt="Logo-Mishka"></a>
     </div>
     <!--Блок контакты/карта-->
     <div class="contacts">

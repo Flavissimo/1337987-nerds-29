@@ -24,37 +24,379 @@
     url("/fonts/robotomedium.woff2") format("woff2"),
     url("/fonts/robotomedium.woff") format("woff");
 }
-:root{
-  --basic-color: #EEEEEE;
-  --font-neutral-black: #000000;
-}
 
-* {
-  text-decoration: none;
-  margin: 0;
-  padding: 0;
+:root {
+  /*Background color*/
+  --basic-background-header: #EEEEEE;
+  --basic-background: #FFFFFF;
+  /*Fonts color*/
+  --basic-black: #000000;
+  --black-text: #283136;
+  --basic-green: #01A25E;
+  --basic-orange: #FB565A;
+  --basic-white: #FFFFFF;
+  --basic-yellow: #EFC84A;
+  /*Buttons color*/
+  --neutral-orange-btn: #FB565A;
+  --hover-orange-btn: #E74246;
+  --active-orange-btn: #D7373B;
+  --neutral-green-btn: #00CA74;
+  --hover-green-btn: #00BC6C;
+  --active-green-btn: #00AA62;
+  --neutral-yellow-btn: #EFC84A;
+  --hover-yellow-btn: #EAB534;
+  --active-yellow-btn: #E5A722;
+  --neutral-grey-field: #EEEEEE;
+  --hover-grey-field: #DFDFDF;
+  --active-grey-field: #D5D5D5;
+  /*Icon color*/
+  --icon-navigation: #A6A6A6;
+  --icon-social: #FFFFFF;
 }
 
 html,
 body {
   font-family: 'Roboto', Arial, sans-serif;
+  color: var(--basic-black);
+  background-color: var(--basic-background-color);
   position: relative;
-  width: auto;
+  min-width: 1200px;
+  height: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
   height: auto;
 }
+
+.main-header {
+  width: 1440px;
+  height: 545px;
+  background-color: var(--basic-background-header);
+}
+
+.logo {
+  padding-left: 140px;
+  padding-top: 48.98px;
+}
+.logo:active{
+  opacity: 0.3;
+}
+
+.main-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+}
+
+.site-navigation {
+  display: flex;
+  list-style: none;
+  color: var(--basic-black);
+}
+
+.list-navigation {
+  margin: 45px 10px;
+  align-items: center;
+}
+
+.link-navigation {
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.link-navigation:link {
+  color: var(--basic-black);
+}
+
+.link-navigation:visited {
+  color: var(--basic-black);
+  text-decoration: underline;
+  text-decoration-color: var(--basic-orange);
+  /*НЕ работает подчеркивание. Почему?*/
+}
+
+.link-navigation:hover {
+  color: var(--basic-orange);
+}
+
+.link-navigation:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+.main-header-representation {
+  display: block;
+  text-align: left;
+}
+
+.main-header-about h1 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.main-header-about {
+  display: block;
+  float: left;
+}
+
+.main-header-about p {
+  color: var(--black-text);
+  font-size: 16px;
+  line-height: 24px;
+  width: 400px;
+  height: 49px;
+}
+
+.main-header-slide {
+  display: block;
+  float: right;
+}
+
+.main-header-slide-img {
+  width: 760px;
+  height: 431px;
+}
+
+.main-header-btn {
+  width: 240px;
+  height: 50px;
+  border-radius: 3px;
+  color: var(--basic-white);
+  background-color: var(--neutral-orange-btn);
+}
+
+.main-header-btn:hover {
+  background-color: var(--hover-orange-btn);
+}
+
+.main-header-btn:active {
+  background-color: var(--active-orange-btn);
+  color: var(--basic-white);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/*Main Block*/
+.offers {
+  display: flex;
+  border-bottom: 2px solid #EEEEEE;
+  width: 100%;
+}
+
+.list-offers {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.list-offers li {
+  text-align: left;
+}
+
+.list-offers h3 {
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.list-offers p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--black-text);
+}
+
+.img-offers {
+  width: 300px;
+  height: 146px;
+}
+
+.button-websites {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--neutral-orange-btn);
+  color: var(--basic-white);
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+}
+
+.button-websites:hover {
+  background-color: var(--hover-orange-btn);
+  color: var(--basic-white);
+}
+
+.button-websites:active {
+  background-color: var(--active-orange-btn);
+  color: var(--basic-white);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-applications {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--neutral-green-btn);
+  color: var(--basic-white);
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+}
+
+.button-applications:hover {
+  background-color: var(--hover-green-btn);
+  color: var(--basic-white);
+}
+
+.button-applications:active {
+  background-color: var(--active-green-btn);
+  color: var(--basic-white);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+.button-presentation {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: var(--neutral-yellow-btn);
+  color: var(--basic-white);
+  border-radius: 3px;
+  width: 160px;
+  height: 50px;
+}
+
+.button-presentation:hover {
+  background-color: var(--hover-yellow-btn);
+  color: var(--basic-white);
+}
+
+.button-presentation:active {
+  background-color: var(--active-yellow-btn);
+  color: var(--basic-white);
+  opacity: 0.3;
+  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+
+/*Main Block Advantages*/
+.advantages {
+  display: flex;
+  border-bottom: 2px solid #EEEEEE;
+}
+
+.about-advantages {
+}
+
+.about-advantages h2 {
+  font-size: 45px;
+  line-height: 45px;
+  width: 60%;
+}
+
+.about-advantages p {
+  color: var(--black-text);
+  font-size: 16px;
+  line-height: 24px;
+    text-align: left;
+}
+
+.about-advantages h4 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.list-advantages {
+  list-style: none;
+  /*НЕ ПОНИМАЮ, что за оранжевые палочки?*/
+}
+
+.list-advantages li {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.statistics-adventages {
+  width: 40%;
+}
+
+.statistics-adventages h4 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+.statistics-adventages p{ /*СПРОСИТЬ! Не понимаю.*/
+  color: var(--black-text);
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.statistic-numeral {
+  font-weight: bold;
+  color: var(--basic-black);
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.logo-with-color {
+  width: 360px;
+  height: 208px;
+}
+/*Main Partners*/
+.partners{
+  width: 100%;
+  border-bottom: : 2px solid #EEEEEE;
+}
+.img-partners{
+  width: 209px;
+  height: 90px;
+  opacity: 0.2;
+}
+.img-partners:hover{
+
+}
+.img-partners:active{
+  opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Дополнительно*/
 .main-sort {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.menu-sort{
-display: flex;
-list-style: none;
+
+.menu-sort {
+  display: flex;
+  list-style: none;
 }
-.menu-list-sort{
-  margin: 10px 40px;
-}
-.menu-link-sort{
+
+.menu-link-sort {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--font-neutral-black);
