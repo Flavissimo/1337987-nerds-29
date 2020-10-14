@@ -36,6 +36,7 @@
   --basic-orange: #FB565A;
   --basic-white: #FFFFFF;
   --basic-yellow: #EFC84A;
+  --basic-grey: #666666;
   /*Buttons color*/
   --neutral-orange-btn: #FB565A;
   --hover-orange-btn: #E74246;
@@ -60,7 +61,7 @@ body {
   color: var(--basic-black);
   background-color: var(--basic-background-color);
   position: relative;
-  min-width: 1200px;
+  width: 100%;
   height: auto;
   font-style: normal;
   font-weight: normal;
@@ -78,7 +79,6 @@ img {
 }
 
 .main-header {
-  width: 1440px;
   height: 545px;
   background-color: var(--basic-background-header);
 }
@@ -87,7 +87,8 @@ img {
   padding-left: 140px;
   padding-top: 48.98px;
 }
-.logo:active{
+
+.logo:active {
   opacity: 0.3;
 }
 
@@ -294,8 +295,7 @@ img {
   border-bottom: 2px solid #EEEEEE;
 }
 
-.about-advantages {
-}
+.about-advantages {}
 
 .about-advantages h2 {
   font-size: 45px;
@@ -307,7 +307,7 @@ img {
   color: var(--black-text);
   font-size: 16px;
   line-height: 24px;
-    text-align: left;
+  text-align: left;
 }
 
 .about-advantages h4 {
@@ -332,14 +332,21 @@ img {
   width: 40%;
 }
 
-.statistics-adventages h4 {
+.text-advantages {
+  width: 360px;
+}
+
+.text-advantages h4 {
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-black);
 }
-.statistics-adventages p{ /*СПРОСИТЬ! Не понимаю.*/
+
+.text-advantages p {
+  /*СПРОСИТЬ! Не понимаю.*/
   color: var(--black-text);
   font-size: 16px;
   line-height: 18px;
@@ -356,23 +363,128 @@ img {
   width: 360px;
   height: 208px;
 }
+
 /*Main Partners*/
-.partners{
+.partners {
   width: 100%;
   border-bottom: : 2px solid #EEEEEE;
+  text-align: center;
 }
-.img-partners{
-  width: 209px;
-  height: 90px;
+
+.img-partners {
   opacity: 0.2;
 }
-.img-partners:hover{
 
+.img-partners:hover {
+  /*НЕ становится черным. Но не могу понять, что необходимо*/
 }
-.img-partners:active{
+
+.img-partners:active {
   opacity: 0.3;
 }
 
+/*Map*/
+/*.contacts {
+  background-image: url('../img/map 1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 1440px;
+  height: 416px;
+  /*Вопросы по ширине. Не растягивает.*/
+/*ЧТО ТО ЯВНО ПОШЛО НЕ ТАК.*/
+.contacts-info {
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-background);
+  border: 1px solid grey;
+  text-align: center;
+}
+
+.contacts-info h3 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contacts-info p, a {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-grey);
+}
+
+.button-contacts {
+  width: 219px;
+  height: 50px;
+  color: var(--basic-white);
+  background-color: var(--neutral-orange-btn);
+  border-radius: 3px;
+}
+
+.button-contacts:hover {
+  background-color: var(--hover-orange-btn);
+  color: var(--basic-white);
+}
+
+.button-contacts:active {
+  background-color: var(--active-orange-btn);
+  color: var(--basic-white);
+  opacity: 0.3;
+}
+
+/*Footer*/
+.main-footer {
+  width: 100%;
+  height: auto;
+}
+
+.footer-social {
+  display: flex;
+  width: 40%;
+}
+
+.list-footer {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.list-footer li {
+  display: block;
+  margin: 20px;
+  background-color: var(--icon-social);
+  background: linear-gradient(0deg, #E1E1E1, #E1E1E1);
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+}
+
+.social-icon {
+  display: inline-block;
+  padding-left: 35px;
+  padding-top: 35px;
+  /*Еще повыравнивать нужно*/
+}
+
+.footer-text {
+  text-align: center;
+  /*display: inline-block;
+  float: right;*/
+}
+
+.footer-text h2 {
+  color: var(--basic-black);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.footer-text p {
+  color: #444444;
+  font-size: 16px;
+  line-height: 22px;
+}
 
 
 
@@ -380,11 +492,7 @@ img {
 
 
 
-
-
-
-
-/*Дополнительно*/
+/*Contacts*/
 .main-sort {
   display: flex;
   flex-wrap: wrap;
