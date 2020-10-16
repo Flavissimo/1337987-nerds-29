@@ -60,21 +60,29 @@
     <div class="main-catalog">
       <!--Меню сортировки-->
       <div class="main-sort">
-        <h3>СОРТИРОВАТЬ:</h3>
+        <h3 class="main-top-sort">СОРТИРОВАТЬ:</h3>
         <ul class="menu-sort">
-          <li class="menu-list-sort"><a href="#" class="menu-link-sort">По цене</a></li>
-          <li class="menu-list-sort"><a href="#" class="menu-link-sort">По типу</a></li>
-          <li class="menu-list-sort"><a href="#" class="menu-link-sort">По названию</a></li>
+          <li class="menu-item-sort"><a href="#" class="menu-link-sort">По цене</a></li>
+          <li class="menu-item-sort"><a href="#" class="menu-link-sort">По типу</a></li>
+          <li class="menu-item-sort"><a href="#" class="menu-link-sort">По названию</a></li>
         </ul>
       </div>
       <!--Основной контент-галерея-->
       <div class="main-block">
         <div class="block">
+          <div class="block-dots">
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a><br>
+        </div>
           <img src="img/img-sedona 1.png" alt="gallery">
           <!--Всплывающее окно-->
+          <!--ПопАп с ценой в галерее
+        <section class="popap-gallery">
+          <h3>SEDONA</h3>
+          <p>Информационный сайт для туристов</p>
+          <button type="button" name="price-button">КУПИТЬ</button>
+        </section> -->
         </div>
         <div class="block">
           <div class="block-dots">
@@ -120,17 +128,19 @@
     </div>
   </div>
   <div class="contacts">
-    <!--Картинка карты в бэке-->
     <img src="img/map-marker 1.png" alt="marker" class="contacts_marker">
-    <section class="contacts-info">
-      <h3>Nerds Design Studio</h3>
-      <p>191186, Санкт-Петербург,
-        ул. Б. Конюшенная, д. 19/8 </p>
-      <a href="tel:+78122757575">тел. +7(812) 275-75-75</a><br>
-      <button class="button-contacts" type="button">Напишите нам</button>
-    </section>
+    <div class="contacts_map_block">
+      <section class="contacts-info">
+        <h3 class="main-top-info-contacts">Nerds Design Studio</h3>
+        <p class="text-contacts">191186, Санкт-Петербург,
+          ул. Б. Конюшенная, д. 19/8 </p>
+        <a href="tel:+78122757575" class="link-contacts">тел. +7(812) 275-75-75</a><br>
+        <button class="button-contacts" type="button">Напишите нам</button>
+      </section>
+    </div>
   </div>
   <br>
+    <!--Подвал-->
   <footer class="main-footer">
     <div class="footer-social">
       <ul class="list-footer">
@@ -144,12 +154,7 @@
       <p>Скидка 10% для друзей из социальных сетей. </p>
     </section>
   </footer>
-    <!--ПопАп с ценой в галерее
-  <section class="popap-gallery">
-    <h3>SEDONA</h3>
-    <p>Информационный сайт для туристов</p>
-    <button type="button" name="price-button">КУПИТЬ</button>
-  </section> -->
+
 </body>
 
 </html>

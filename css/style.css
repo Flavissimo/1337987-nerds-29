@@ -325,10 +325,11 @@ img {
 .list-advantages {
   list-style: none;
 }
-.item-advantages::before{
-content: "⸺";
-color: var(--long-dash);
-margin-right: 7px;
+
+.item-advantages::before {
+  content: "⸺";
+  color: var(--long-dash);
+  margin-right: 7px;
 }
 
 .item-advantages {
@@ -337,11 +338,9 @@ margin-right: 7px;
   text-align: left;
 }
 
-.statistics-adventages {
-}
+.statistics-adventages {}
 
-
-.statistics-main-adventages{
+.statistics-main-adventages {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -349,13 +348,15 @@ margin-right: 7px;
   line-height: 24px;
   color: var(--basic-black);
 }
+
 /*.wrapper-for-flex{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
 }*/
-.block-statistic{}
- /*ЕЩЕ РАЗ СПРОСИТЬ-НЕ ПОНИМАЮ!*/
+.block-statistic {}
+
+/*ЕЩЕ РАЗ СПРОСИТЬ-НЕ ПОНИМАЮ!*/
 .statistic-text {
   color: var(--black-text);
   font-size: 16px;
@@ -368,7 +369,6 @@ margin-right: 7px;
   font-size: 45px;
   line-height: 64px;
 }
-
 
 .logo-with-color {
   width: 360px;
@@ -391,7 +391,7 @@ margin-right: 7px;
 }
 
 .img-partners:hover {
-opacity: 1;
+  opacity: 1;
 }
 
 .img-partners:active {
@@ -400,13 +400,13 @@ opacity: 1;
 
 /*Map*/
 .contacts {
-background: no-repeat url("../img/map 1.png") fixed;
-background-size: 100%;
-background-position: center;
+  background: no-repeat url("../img/map 1.png") fixed;
+  background-size: 100%;
+  background-position: center;
 }
-/*УТОЧНИТЬ ПРО ПРОКРУТКУ! И ВООБЩЕ СЛУЧИЛОСЬ СТРАШНОЕ...*/
 
-.contacts_marker{
+/*УТОЧНИТЬ ПРО ПРОКРУТКУ! И ВООБЩЕ СЛУЧИЛОСЬ СТРАШНОЕ...*/
+.contacts_marker {
   position: absolute;
 }
 
@@ -430,9 +430,11 @@ background-position: center;
 .text-contacts {
   font-size: 16px;
   line-height: 18px;
-  color: var(--basic-grey);/*!Через запятую не срабатывает свойства на оба селектора!*/
+  color: var(--basic-grey);
+  /*!Через запятую не срабатывает свойства на оба селектора!*/
 }
-.link-contacts{
+
+.link-contacts {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
@@ -513,7 +515,10 @@ background-position: center;
 /*Вторая
 страница
 CATALOG*/
+
 /*боковая форма*/
+
+
 .main-header-catalog {
   height: 355px;
   background-color: var(--basic-background-header);
@@ -542,7 +547,7 @@ input[type=range] {
   line-height: 22px;
   color: var(--black-text);
 }
-
+/*А как стилизовать текст в форме?*/
 input[type=text] {
   width: 80px;
   height: 38px;
@@ -655,24 +660,27 @@ input[type=submit]:active {
   text-decoration: none;
   text-transform: uppercase;
   color: var(--basic-black);
-  opacity: 0.3;
+  opacity: 30%
 }
 
 .menu-link-sort:hover {
-  text-transform: uppercase;
   color: var(--basic-black);
+  opacity: 60%;
 }
 
 .menu-link-sort:active {
   text-transform: uppercase;
   color: var(--basic-black);
-  opacity: 0.2;
+  opacity: 100%;
 }
 
 /*Gallery*/
+.main-block {}
+
 .block {
   width: 360px;
   height: 618px;
+  margin: 20px;
 }
 
 .gallery-path {
@@ -680,30 +688,30 @@ input[type=submit]:active {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-color: yellow;
-  /*проверка*/
+  background-color: blue;
+  /*проверка, указала другой цвет*/
   border-radius: 50%;
 }
-
-.block-dots {
+/*с этого места не работает как нужно. СПРОСИТЬ!*/
+.block-with-dots {
   height: 40px;
-  box-shadow:
-    background-color:var(--gallery-back);
-  /*не работает*/
-  opacity: 0.3;
+  width: auto;
+  background-color: var(--gallery-back);
+  opacity: 100%;
 }
 
-.block-dots:hover {
+.block-with-dots:hover {
   width: auto;
   height: 40px;
-  box-shadow:
-    background-color:var(--gallery-back);
+  background-color: var(--gallery-back);
+  opacity: 0.3;
 }
 
 /*Pagination*/
 .gallery-page {
   position: relative;
   display: inline-block;
+  text-align: center;
   width: 50px;
   height: 50px;
   background: #EEEEEE;
@@ -717,17 +725,28 @@ input[type=submit]:active {
   display: inline-block;
   width: 260px;
   height: 50px;
+  text-transform: uppercase;
+  text-align: center;
   background: #EEEEEE;
   color: var(--basic-black);
   text-align: center;
   border-radius: 3px;
 }
 
-.gallery-page, .gallery-next:hover {
+.gallery-page:hover {
   background: #DFDFDF;
 }
 
-.gallery-page, .gallery-next:active {
+.gallery-next:hover {
+  background: #DFDFDF;
+}
+
+.gallery-page:active {
+  background: #D5D5D5;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+}
+
+.gallery-next:active {
   background: #D5D5D5;
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
