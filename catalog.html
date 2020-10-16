@@ -11,10 +11,10 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header-catalog">
     <nav class="main-navigation">
       <a href="#" class="main-header-logo">
-        <img src="https://via.placeholder.com/160x49" alt="Logo" class="logo">
+        <img src="img/nerds-logo.png" alt="Logo" class="logo">
       </a>
       <ul class="site-navigation">
         <li class="list-navigation"><a class="link-navigation" href="index.html">Студия</a></li>
@@ -32,12 +32,13 @@
   <div class="wrapper-catalog">
     <aside class="aside-bar">
       <form method="get">
-        <label>СТОИМОСТЬ: <br>
+        <label>СТОИМОСТЬ:<br>
           <input type="range" name="range" min="0" max="15000" value="7500" step="1">
         </label><br>
         <label for="number"> </label><br>
+        <p class="aside-text">
         ОТ<input type="text" name="number-min" value="0" id="number">
-        ДО<input type="text" name="number-max" value="15000">
+        ДО<input type="text" name="number-max" value="15000"></p>
         <br>
         <label for="radio">СЕТКА:</label><br>
         <input type="radio" name="grid" value="rad1" id="radio">Адаптивная <br>
@@ -51,8 +52,9 @@
         <input type="checkbox" name="gallery" value="a4">Галерея<br>
         <input type="checkbox" name="basket" value="a5">Корзина<br>
         <br>
-        <input type="submit" name="submit" value="ПОКАЗАТЬ">
+          <input type="submit" name="submit" value="ПОКАЗАТЬ"></button>
       </form>
+
     </aside>
     <!--Блок основного наполнения-->
     <div class="main-catalog">
@@ -71,38 +73,40 @@
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a><br>
-          <img src="https://via.placeholder.com/358x516" alt="gallery">
+          <img src="img/img-sedona 1.png" alt="gallery">
           <!--Всплывающее окно-->
         </div>
         <div class="block">
+          <div class="block-dots">
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
-          <img src="https://via.placeholder.com/358x516" alt="gallery">
+          </div>
+          <img src="img/img-pink 1.png" alt="gallery">
         </div>
         <div class="block">
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
-          <img src="https://via.placeholder.com/358x516" alt="gallery">
+          <img src="img/img-barbershop 1.png" alt="gallery">
         </div>
         <div class="block">
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
-          <img src="https://via.placeholder.com/358x516" alt="gallery">
+          <img src="img/img-mishka 1.png" alt="gallery">
         </div>
         <div class="block">
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
-          <img src="https://via.placeholder.com/358x516" alt="gallery">
+          <img src="img/img-aplus 1.png" alt="gallery">
         </div>
         <div class="block">
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
           <a href="#" class="gallery-path"></a>
-          <img src="https://via.placeholder.com/358x516" alt="gallery">
+          <img src="img/img-kvast 1.png" alt="gallery">
         </div>
       </div>
       <br>
@@ -117,6 +121,7 @@
   </div>
   <div class="contacts">
     <!--Картинка карты в бэке-->
+    <img src="img/map-marker 1.png" alt="marker" class="contacts_marker">
     <section class="contacts-info">
       <h3>Nerds Design Studio</h3>
       <p>191186, Санкт-Петербург,
@@ -129,10 +134,9 @@
   <footer class="main-footer">
     <div class="footer-social">
       <ul class="list-footer">
-        <!--Здесь будут иконки соц. сетей-->
-        <li><a class="link-footer" href="#">Вконтакте</a></li>
-        <li><a class="link-footer" href="#">Фейсбук</a></li>
-        <li><a class="link-footer" href="#">Инстаграм</a></li>
+        <li><a class="link-footer" href="#"><img src="img/vk-icon.png" alt="social-icon" class="social-icon"></a></li>
+        <li><a class="link-footer" href="#"><img src="img/fb-icon.png" alt="social-icon" class="social-icon"></a></li>
+        <li><a class="link-footer" href="#"><img src="img/inst-icon.png" alt="social-icon" class="social-icon"></a></li>
       </ul>
     </div>
     <section class="footer-text">

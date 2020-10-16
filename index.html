@@ -32,7 +32,7 @@
       <div class="main-header-about">
         <h1>Долго, дорого, <br>скурпулезно</h1>
         <p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-        <form method="post" class="main-header-button">
+        <form method="post">
           <button type="button" value="learn more" class="main-header-btn">Узнать больше</button>
         </form>
       </div>
@@ -47,25 +47,25 @@
     <!--Блок предложений-->
     <div class="offers">
       <ul class="list-offers">
-        <li><a class="link-offers" href="">
+        <li clas="item-offers"><a class="link-offers" href="">
             <img class="img-offers" src="img/illustration-1 1.png" alt="Web-sites">
-            <h3>Веб-сайты</h3>
+            <h3 class="main-topic-offers">Веб-сайты</h3>
           </a>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт! </p>
+          <p class="text-offers">Мир никогда не будет прежним после того как увидит ваш сайт! </p>
           <button type="button" class="button-websites">Заказать</button>
         </li>
-        <li><a class="link-offers" href="">
+        <li clas="item-offers"><a class="link-offers" href="">
             <img class="img-offers" src="img/illustration-2 1.png" alt="Applications">
-            <h3>Приложения</h3>
+            <h3 class="main-topic-offers">Приложения</h3>
           </a>
-          <p>Покорите топ-10 приложений в AppStore и Google Play </p>
+          <p class="text-offers">Покорите топ-10 приложений в AppStore и Google Play </p>
           <button type="button" class="button-applications">Заказать</button>
         </li>
-        <li><a class="link-offers" href="">
+        <li clas="item-offers"><a class="link-offers" href="">
             <img class="img-offers" src="img/illustration-3 1.png" alt="Presentetion">
-            <h3>Презентации</h3>
+            <h3 class="main-topic-offers">Презентации</h3>
           </a>
-          <p>Вы даже не подозреваете, насколько вы изумительны! </p>
+          <p class="text-offers">Вы даже не подозреваете, насколько вы изумительны! </p>
           <button type="button" class="button-presentation">Заказать</button>
         </li>
       </ul>
@@ -73,25 +73,35 @@
     <!--Блок преимуществ-->
     <div class="advantages">
       <section class="about-advantages">
-        <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
-        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,
+        <h2 class="top-advantages">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h2>
+        <p class="text-advantages">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук,
           как роботы. </p>
-        <h4>Выполняем заказы на разработку:</h4>
+        <h4 class="top-main-advantages">Выполняем заказы на разработку:</h4>
         <ul class="list-advantages">
-          <li>Веб-сайтов любой сложности</li>
-          <li>Мобильных приложений для IOS и Android</li>
-          <li>Слайдшоу и видео для корпоративных мероприятий</li>
+          <li class="item-advantages">Веб-сайтов любой сложности</li>
+          <li class="item-advantages">Мобильных приложений для IOS и Android</li>
+          <li class="item-advantages">Слайдшоу и видео для корпоративных мероприятий</li>
         </ul>
       </section>
       <div class="statistics-adventages">
         <img class="logo-with-color" src="img/nerds-illustration 1.png" alt="Logo-with-color">
         <div class="text-advantages">
-        <h4>С 2004 года любим точность во всем:</h4>
-        <p class="statistic-numeral">146%</p><p> Уровень самоотдачи</p>
-        <p class="statistic-numeral">100%</p><p>Соблюдение сроков</p>
-        <p class="statistic-numeral">50%</p><p>Минимальная предоплата</p>
+          <h4 class="statistics-main-adventages">С 2004 года любим точность во всем:</h4>
+          <div class="wrapper-for-flex">
+          <div class="block-statistic">
+          <p class="statistic-numeral">146%</p>
+          <p class="statistic-text"> Уровень самоотдачи</p>
         </div>
-        <!--СПОРНЫЙ МОМЕНТ, СПРОСИТЬ-->
+        <div class="block-statistic">
+          <p class="statistic-numeral">100%</p>
+          <p class="statistic-text">Соблюдение сроков</p>
+        </div>
+        <div class="block-statistic">
+          <p class="statistic-numeral">50%</p>
+          <p class="statistic-text">Минимальная предоплата</p>
+        </div>
+      </div>
+        </div>
       </div>
     </div>
     <!--Блок партнеров-->
@@ -103,16 +113,15 @@
     </div>
     <!--Блок контакты/карта-->
     <div class="contacts">
-      <!--Картинка карты в бэке-->
-      <div class="contacts_map_block">
       <img src="img/map-marker 1.png" alt="marker" class="contacts_marker">
-      <section class="contacts-info">
-        <h3>Nerds Design Studio</h3>
-        <p>191186, Санкт-Петербург,
-          ул. Б. Конюшенная, д. 19/8 </p>
-        <a href="tel:+78122757575">тел. +7(812) 275-75-75</a><br>
-        <button class="button-contacts" type="button">Напишите нам</button>
-      </section>
+      <div class="contacts_map_block">
+        <section class="contacts-info">
+          <h3 class="main-top-info-contacts">Nerds Design Studio</h3>
+          <p class="text-contacts">191186, Санкт-Петербург,
+            ул. Б. Конюшенная, д. 19/8 </p>
+          <a href="tel:+78122757575" class="link-contacts">тел. +7(812) 275-75-75</a><br>
+          <button class="button-contacts" type="button">Напишите нам</button>
+        </section>
       </div>
     </div>
   </main>
@@ -120,10 +129,9 @@
   <footer class="main-footer">
     <div class="footer-social">
       <ul class="list-footer">
-        <!--Здесь будут иконки соц. сетей-->
-        <li><a class="link-footer" href="#"><img src="img/vk-icon.png" alt="social-icon" class="social-icon"></a></li>
-        <li><a class="link-footer" href="#"><img src="img/fb-icon.png" alt="social-icon" class="social-icon"></a></li>
-        <li><a class="link-footer" href="#"><img src="img/inst-icon.png" alt="social-icon" class="social-icon"></a></li>
+        <li class="item-footer"><a class="link-footer" href="#"><img src="img/vk-icon.png" alt="social-icon" class="social-icon"></a></li>
+        <li class="item-footer"><a class="link-footer" href="#"><img src="img/fb-icon.png" alt="social-icon" class="social-icon"></a></li>
+        <li class="item-footer"><a class="link-footer" href="#"><img src="img/inst-icon.png" alt="social-icon" class="social-icon"></a></li>
       </ul>
     </div>
     <section class="footer-text">
