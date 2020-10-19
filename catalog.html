@@ -33,25 +33,34 @@
     <aside class="aside-bar">
       <form method="get">
         <label>СТОИМОСТЬ:<br>
-          <input type="range" name="range" min="0" max="15000" value="7500" step="1">
-        </label><br>
-        <label for="number"> </label><br>
-        <p class="aside-text">
-        ОТ<input type="text" name="number-min" value="0" id="number">
-        ДО<input type="text" name="number-max" value="15000"></p>
-        <br>
-        <label for="radio">СЕТКА:</label><br>
-        <input type="radio" name="grid" value="rad1" id="radio">Адаптивная <br>
-        <input type="radio" name="grid" value="rad2">Фиксированная <br>
-        <input type="radio" name="grid" value="rad3">Резиновая <br>
-        <br>
-        <label for="features">ОСОБЕННОСТИ:</label><br>
-        <input type="checkbox" name="slider" value="a1" id="features" checked>Слайдер<br>
-        <input type="checkbox" name="advantages" value="a2">Блок преимущесвт<br>
-        <input type="checkbox" name="news" value="a3" checked>Новости<br>
-        <input type="checkbox" name="gallery" value="a4">Галерея<br>
-        <input type="checkbox" name="basket" value="a5">Корзина<br>
-        <br>
+          <div class="block-for-range">
+            <div class="round-for-range-left">
+              <div class="dot-for-range"></div>
+            </div>
+            <div class="range-green" style="background-color:#00CA74"></div>
+            <div class="round-for-range-right">
+              <div class="dot-for-range"></div>
+            </div>
+            <div class="range-grey" style="background-color:#D7DCDF"></div>
+            <!--<input type="range" name="range" min="0" max="15000" value="7500" step="1">-->
+          </div><br>
+          <label for="number"> </label><br>
+          <p class="aside-text">
+            ОТ<input type="text" name="number-min" value="0" id="number">
+            ДО<input type="text" name="number-max" value="15000"></p>
+          <br>
+          <label for="radio">СЕТКА:</label><br>
+          <input type="radio" name="grid" value="rad1" id="radio">Адаптивная <br>
+          <input type="radio" name="grid" value="rad2">Фиксированная <br>
+          <input type="radio" name="grid" value="rad3">Резиновая <br>
+          <br>
+          <label for="features">ОСОБЕННОСТИ:</label><br>
+          <input type="checkbox" name="slider" value="a1" id="features" checked>Слайдер<br>
+          <input type="checkbox" name="advantages" value="a2">Блок преимущесвт<br>
+          <input type="checkbox" name="news" value="a3" checked>Новости<br>
+          <input type="checkbox" name="gallery" value="a4">Галерея<br>
+          <input type="checkbox" name="basket" value="a5">Корзина<br>
+          <br>
           <input type="submit" name="submit" value="ПОКАЗАТЬ"></button>
       </form>
 
@@ -71,10 +80,10 @@
       <div class="main-block">
         <div class="block">
           <div class="block-dots">
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a><br>
-        </div>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a><br>
+          </div>
           <img src="img/img-sedona 1.png" alt="gallery">
           <!--Всплывающее окно-->
           <!--ПопАп с ценой в галерее
@@ -86,9 +95,9 @@
         </div>
         <div class="block">
           <div class="block-with-dots">
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
           </div>
           <img src="img/img-pink 1.png" alt="gallery">
         </div>
@@ -140,7 +149,7 @@
     </div>
   </div>
   <br>
-    <!--Подвал-->
+  <!--Подвал-->
   <footer class="main-footer">
     <div class="footer-social">
       <ul class="list-footer">
