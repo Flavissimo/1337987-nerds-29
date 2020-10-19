@@ -32,7 +32,7 @@
   <div class="wrapper-catalog">
     <aside class="aside-bar">
       <form method="get">
-        <label>СТОИМОСТЬ:<br>
+        <label>Стоимость:<br>
           <div class="block-for-range">
             <div class="round-for-range-left">
               <div class="dot-for-range"></div>
@@ -49,19 +49,22 @@
             ОТ<input type="text" name="number-min" value="0" id="number">
             ДО<input type="text" name="number-max" value="15000"></p>
           <br>
-          <label for="radio">СЕТКА:</label><br>
-          <input type="radio" name="grid" value="rad1" id="radio">Адаптивная <br>
-          <input type="radio" name="grid" value="rad2">Фиксированная <br>
-          <input type="radio" name="grid" value="rad3">Резиновая <br>
-          <br>
-          <label for="features">ОСОБЕННОСТИ:</label><br>
-          <input type="checkbox" name="slider" value="a1" id="features" checked>Слайдер<br>
-          <input type="checkbox" name="advantages" value="a2">Блок преимущесвт<br>
-          <input type="checkbox" name="news" value="a3" checked>Новости<br>
-          <input type="checkbox" name="gallery" value="a4">Галерея<br>
-          <input type="checkbox" name="basket" value="a5">Корзина<br>
-          <br>
-          <input type="submit" name="submit" value="ПОКАЗАТЬ"></button>
+          <label for="radio">Сетка:</label><br>
+          <input type="radio" name="grid" value="rad1" id="radio">
+          <span="text-for-radio">Адаптивная</span> <br>
+            <input type="radio" name="grid" value="rad2">
+            <span="text-for-radio">Фиксированная</span> <br>
+              <input type="radio" name="grid" value="rad3">
+              <span="text-for-radio">Резиновая</span> <br>
+                <br>
+                <label for="features">Особенности:</label><br>
+                <input type="checkbox" name="slider" value="a1" id="features" checked><span="text-for-features">Слайдер</span><br>
+                <input type="checkbox" name="advantages" value="a2"><span="text-for-features">Блок преимущесвт</span><br>
+                <input type="checkbox" name="news" value="a3" checked><span="text-for-features">Новости</span><br>
+                <input type="checkbox" name="gallery" value="a4"><span="text-for-features">Галерея</span><br>
+                <input type="checkbox" name="basket" value="a5"><span="text-for-features">Корзина</span><br>
+                <br>
+                <input type="submit" name="submit" value="ПОКАЗАТЬ"></button>
       </form>
 
     </aside>
@@ -79,12 +82,12 @@
       <!--Основной контент-галерея-->
       <div class="main-block">
         <div class="block">
-          <div class="block-dots">
+          <div class="block-with-dots">
             <a href="#" class="gallery-path"></a>
             <a href="#" class="gallery-path"></a>
             <a href="#" class="gallery-path"></a><br>
           </div>
-          <img src="img/img-sedona 1.png" alt="gallery">
+          <img src="img/img-sedona 1.png" alt="gallery" class="gallery-img">
           <!--Всплывающее окно-->
           <!--ПопАп с ценой в галерее
         <section class="popap-gallery">
@@ -103,35 +106,35 @@
         </div>
         <div class="block">
           <div class="block-with-dots">
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <img src="img/img-barbershop 1.png" alt="gallery" class="gallery-img">
-        </div>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <img src="img/img-barbershop 1.png" alt="gallery" class="gallery-img">
           </div>
-        <div class="block">
-          <div class="block-with-dots">
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <img src="img/img-mishka 1.png" alt="gallery" class="gallery-img">
-            </div>
         </div>
         <div class="block">
           <div class="block-with-dots">
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <img src="img/img-aplus 1.png" alt="gallery" class="gallery-img">
-            </div>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <img src="img/img-mishka 1.png" alt="gallery" class="gallery-img">
+          </div>
         </div>
         <div class="block">
           <div class="block-with-dots">
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <a href="#" class="gallery-path"></a>
-          <img src="img/img-kvast 1.png" alt="gallery" class="gallery-img">
-            </div>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <img src="img/img-aplus 1.png" alt="gallery" class="gallery-img">
+          </div>
+        </div>
+        <div class="block">
+          <div class="block-with-dots">
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <a href="#" class="gallery-path"></a>
+            <img src="img/img-kvast 1.png" alt="gallery" class="gallery-img">
+          </div>
         </div>
       </div>
       <br>

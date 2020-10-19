@@ -541,12 +541,6 @@ form label {
   display: flex;
 }
 
-/*input[type="range"] {
-  width: 205px;
- height: 2px;
- margin-top: 39px;
- margin-left:33px;
-}*/
 .round-for-range-left {
   width: 20px;
   height: 20px;
@@ -595,7 +589,6 @@ form label {
   color: var(--black-text);
 }
 
-/*А как стилизовать текст в форме?*/
 input[type=text] {
   width: 80px;
   height: 38px;
@@ -612,7 +605,6 @@ input[type=radio] {
 }
 
 input[type=radio]:visited {
-  /*заблокирована?*/
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
@@ -623,6 +615,12 @@ input[type=radio]:hover {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
+}
+.text-for-radio{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black-text);
 }
 
 input[type="checkbox"] {
@@ -639,10 +637,11 @@ input[type="checkbox"]:visited {
   opacity: 0.3;
 }
 
-input[type="checkbox"] {
-  color: var(--black-text);
+.text-for-features{
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  color: var(--black-text);
 }
 
 input[type="submit"] {
@@ -751,8 +750,6 @@ input[type=submit]:active {
 }
 
 .block-with-dots:hover {
-  width: auto;
-  height: 40px;
   background-color: var(--gallery-back);
   opacity: 100%;
 }
@@ -761,6 +758,7 @@ input[type=submit]:active {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   width: 100%;
+  height: 576px;
 }
 
 /*Pagination*/
