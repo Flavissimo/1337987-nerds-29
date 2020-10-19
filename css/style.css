@@ -531,14 +531,14 @@ form label {
   text-transform: uppercase;
   text-align: left;
 }
-
-input[type=range] {
+.block-for-range{
   width: 260px;
-  height: 80px;
-  background-color: var(--basic-background-header);
+  height:80px;
+  background-color: var(--basic-background-header); 
+}
+input[type="range"] {
   border-radius: 3px;
   border: 1 px solid black;
-  /*Для проверки, цвет не считывает*/
 }
 
 .aside-text {
@@ -577,27 +577,27 @@ input[type=radio]:hover {
   line-height: 20px;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
   opacity: 0.2;
 }
 
-input[type=checkbox]:visited {
+input[type="checkbox"]:visited {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
   opacity: 0.3;
 }
 
-input[type=checkbox] {
+input[type="checkbox"] {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   width: 260px;
   height: 50px;
   font-weight: 500;
