@@ -351,14 +351,14 @@ img {
   color: var(--basic-black);
 }
 
-/*.wrapper-for-flex{
-  display: flex;
-  flex-wrap: wrap;
+.wrapper-for-flex{
+  display: flex;;
   flex-direction: row;
-}*/
-.block-statistic {}
+}
 
-/*ЕЩЕ РАЗ СПРОСИТЬ-НЕ ПОНИМАЮ!*/
+.block-statistic {
+}
+
 .statistic-text {
   color: var(--black-text);
   font-size: 16px;
