@@ -535,15 +535,57 @@ form label {
   margin-top: 48px;
   width: 260px;
   height: 80px;
-  background-color: green;
+  background-color: #EEEEEE;
   border-radius: 3px;
+  padding: 1px;
+  display: flex;
 }
 
-input[type="range"] {
+/*input[type="range"] {
   width: 205px;
+ height: 2px;
+ margin-top: 39px;
+ margin-left:33px;
+}*/
+.round-for-range-left {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ABABAB;
+  background-color: #FFFFFF;
+  margin-left: 17px;
+  margin-top: 29px;
+}
+
+.dot-for-range {
+  width: 4px;
+  height: 4px;
+  background-color: #ABABAB;
+  border-radius: 50%;
+  box-sizing: border-box;
+  margin: 8px;
+}
+
+.range-green {
+  width: 138px;
   height: 2px;
-  margin-top: 39px;
-  margin-left: 33px;
+  margin: 38px 0;
+}
+
+.round-for-range-right {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ABABAB;
+  background-color: #FFFFFF;
+  margin-top: 29px;
+}
+
+.range-grey {
+  width: 57px;
+  height: 2px;
+  margin-top: 38px;
+  margin-right: 21px;
 }
 
 .aside-text {
@@ -694,24 +736,31 @@ input[type=submit]:active {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background-color: blue;
-  /*проверка, указала другой цвет*/
+  background-color: var(--basic-background);
   border-radius: 50%;
 }
 
-/*с этого места не работает как нужно. СПРОСИТЬ!*/
 .block-with-dots {
   height: 40px;
-  width: auto;
+  box-sizing: border-box;
+  width: 100%;
   background-color: var(--gallery-back);
-  opacity: 100%;
+  opacity: 0.3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .block-with-dots:hover {
   width: auto;
   height: 40px;
   background-color: var(--gallery-back);
-  opacity: 0.3;
+  opacity: 100%;
+}
+
+.gallery-img {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 100%;
 }
 
 /*Pagination*/
