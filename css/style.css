@@ -615,12 +615,28 @@ input[type=radio]:hover {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
+  opacity: 100%;
 }
-.text-for-radio{
+.text-for-radio, .text-for-features{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: var(--black-text);
+  opacity: 0.2;
+}
+.text-for-radio, .text-for-features:visited{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black-text);
+  opacity: 0.3;
+}
+.text-for-radio, .text-for-features:hover{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black-text);
+  opacity: 100%;
 }
 
 input[type="checkbox"] {
@@ -632,15 +648,9 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:visited {
   color: var(--black-text);
-  font-size: 16px;
-  line-height: 20px;
   opacity: 0.3;
 }
-
-.text-for-features{
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+input[type="checkbox"]:hover {
   color: var(--black-text);
 }
 
