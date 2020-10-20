@@ -413,7 +413,7 @@ img {
   width: 100%;
   height: inherit;
   box-sizing: border-box;
-  background-image: url(.../img/map 1.png);
+  background-image: url("../img/map 1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-color: lightgrey;
@@ -436,10 +436,9 @@ img {
   height: 190px;
   left: 50%;
   top: 86px;
-  background-image: url(img/map-marker 1.png);
+  background-image: url("../img/map-marker 1.png");
   background-repeat: no-repeat;
   background-position: center;
-  background-color: pink;
 }
 
 /*Map Text*/
