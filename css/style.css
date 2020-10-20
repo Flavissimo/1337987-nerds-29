@@ -400,7 +400,7 @@ img {
   opacity: 0.3;
 }
 
-/*Map*/
+/*Map Position*/
 .contacts {
   position: relative;
   margin-top: 40px;
@@ -412,11 +412,11 @@ img {
   position: absolute;
   width: 100%;
   height: inherit;
-  background-image: url(img/map 1.png);
+  box-sizing: border-box;
+  background-image: url(.../img/map 1.png);
   background-repeat: no-repeat;
   background-position: center;
   background-color: lightgrey;
-  /*Не считывает карту =(*/
 }
 
 .contacts-info {
@@ -429,19 +429,20 @@ img {
   border: 1px solid grey;
   text-align: center;
 }
-.map-dot{
+
+.map-dot {
   position: absolute;
   width: 231px;
-  height:190px;
-  border-radius: 40%;
+  height: 190px;
   left: 50%;
   top: 86px;
-  text-align: center;
-}
-.marker-for-map{
-  box-sizing:border-box;
+  background-image: url(img/map-marker 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: pink;
 }
 
+/*Map Text*/
 .main-top-info-contacts {
   font-size: 18px;
   line-height: 30px;
@@ -482,12 +483,11 @@ img {
   opacity: 0.3;
 }
 
-
-
 /*Footer*/
 .main-footer {
   width: 100%;
   height: auto;
+  position: relative;
 }
 
 .footer-social {
@@ -511,11 +511,19 @@ img {
   border-radius: 50%;
 }
 
-.social-icon {
-  display: inline-block;
+.social-vk {
+  padding-top: 33px;
+  padding-left: 27px;
+}
+
+.social-fb {
+  padding-top: 31px;
   padding-left: 35px;
-  padding-top: 35px;
-  /*Еще повыравнивать нужно*/
+}
+
+.social-inst {
+  padding-top: 30px;
+  padding-left: 30px;
 }
 
 .footer-text {
