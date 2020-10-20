@@ -145,7 +145,7 @@ img {
   text-align: left;
 }
 
-.main-header-about h1 {
+.main-heder-top {
   font-size: 55px;
   line-height: 55px;
 }
@@ -155,7 +155,7 @@ img {
   float: left;
 }
 
-.main-header-about p {
+.main-heder-text {
   color: var(--black-text);
   font-size: 16px;
   line-height: 24px;
@@ -351,13 +351,13 @@ img {
   color: var(--basic-black);
 }
 
-.wrapper-for-flex{
-  display: flex;;
+.wrapper-for-flex {
+  display: flex;
+  ;
   flex-direction: row;
 }
 
-.block-statistic {
-}
+.block-statistic {}
 
 .statistic-text {
   color: var(--black-text);
@@ -406,23 +406,38 @@ img {
   margin-top: 40px;
   width: 100%;
   height: 416px;
-  border-color: grey;
 }
-.map{
+
+.map {
   position: absolute;
   width: 100%;
   height: inherit;
   box-sizing: border-box;
-  background-image: url(.../img/map 1.png) no-repeat center center;
+  background-image: image(img/map 1.png);
+  background-color: lightgrey;
+  /*Не считывает карту =(*/
 }
 
-
 .contacts-info {
+  position: absolute;
+  left: 140px;
+  top: 54px;
   width: 319px;
   height: 308px;
   background-color: var(--basic-background);
   border: 1px solid grey;
   text-align: center;
+}
+.map-dot{
+  position: absolute;
+  width: 231px;
+  height:190px;
+  background-image: url(img/map-marker 1.png);
+  border-radius: 40%;
+  box-sizing: border-box;
+  background-color: pink;
+  left: 50%;
+  top: 86px;
 }
 
 .main-top-info-contacts {
@@ -464,6 +479,8 @@ img {
   color: var(--basic-white);
   opacity: 0.3;
 }
+
+
 
 /*Footer*/
 .main-footer {
@@ -621,21 +638,24 @@ input[type=radio]:hover {
   line-height: 20px;
   opacity: 100%;
 }
-.text-for-radio, .text-for-features{
+
+.text-for-radio, .text-for-features {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: var(--black-text);
   opacity: 0.2;
 }
-.text-for-radio, .text-for-features:visited{
+
+.text-for-radio, .text-for-features:visited {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: var(--black-text);
   opacity: 0.3;
 }
-.text-for-radio, .text-for-features:hover{
+
+.text-for-radio, .text-for-features:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -654,6 +674,7 @@ input[type="checkbox"]:visited {
   color: var(--black-text);
   opacity: 0.3;
 }
+
 input[type="checkbox"]:hover {
   color: var(--black-text);
 }
