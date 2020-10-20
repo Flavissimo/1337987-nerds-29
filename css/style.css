@@ -656,7 +656,8 @@ input[type=radio]:hover {
   opacity: 100%;
 }
 
-.text-for-radio, .text-for-features {
+.text-for-radio,
+.text-for-features {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -664,7 +665,8 @@ input[type=radio]:hover {
   opacity: 0.2;
 }
 
-.text-for-radio, .text-for-features:visited {
+.text-for-radio,
+.text-for-features:visited {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -672,7 +674,8 @@ input[type=radio]:hover {
   opacity: 0.3;
 }
 
-.text-for-radio, .text-for-features:hover {
+.text-for-radio,
+.text-for-features:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
