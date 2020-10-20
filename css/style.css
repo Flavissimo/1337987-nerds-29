@@ -138,11 +138,6 @@ img {
   border-bottom: 2px solid var(--basic-orange);
   padding-bottom: 10px;
 }
-.bascet-for-menu{
-  height: 11px;
-  width: 15px;
-  box-sizing: border-box;
-}
 
 .main-header-representation {
   display: block;
