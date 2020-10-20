@@ -502,6 +502,7 @@ img {
 }
 
 .item-footer {
+  position: relative;
   display: block;
   margin: 20px;
   background-color: var(--icon-social);
@@ -537,8 +538,6 @@ img {
 
 .footer-text {
   text-align: center;
-  /*display: inline-block;
-  float: right;*/
 }
 
 .footer-text h2 {
