@@ -432,12 +432,14 @@ img {
   position: absolute;
   width: 231px;
   height:190px;
-  background-image: url(img/map-marker 1.png);
   border-radius: 40%;
-  box-sizing: border-box;
-  background-color: pink;
   left: 50%;
   top: 86px;
+  text-align: center;
+}
+.marker-for-map{
+  position: fixed;
+  box-sizing:border-box;
 }
 
 .main-top-info-contacts {
