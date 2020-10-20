@@ -647,7 +647,7 @@ input[type=radio] {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 input[type=radio]:visited {
@@ -669,7 +669,7 @@ input[type=radio]:hover {
   font-size: 16px;
   line-height: 20px;
   color: var(--black-text);
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 .text-for-features {
@@ -677,10 +677,10 @@ input[type=radio]:hover {
   font-size: 16px;
   line-height: 20px;
   color: var(--black-text);
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
-.text-for-radio{
+.text-for-radio:visited{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -696,7 +696,7 @@ input[type=radio]:hover {
   opacity: 0.3;
 }
 
-.text-for-radio{
+.text-for-radio:hover{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -715,7 +715,7 @@ input[type="checkbox"] {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
-  opacity: 0.2;
+  opacity: 0.8;
 }
 
 input[type="checkbox"]:visited {
