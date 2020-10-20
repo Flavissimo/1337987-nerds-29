@@ -402,18 +402,22 @@ img {
 
 /*Map*/
 .contacts {
-  background: no-repeat url("../img/map 1.png") fixed;
-  background-size: 100%;
-  background-position: center;
+  position: relative;
+  margin-top: 40px;
+  width: 100%;
+  height: 416px;
+  border-color: grey;
+}
+.map{
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  box-sizing: border-box;
+  background-image: url(.../img/map 1.png) no-repeat center center;
 }
 
-/*УТОЧНИТЬ ПРО ПРОКРУТКУ! И ВООБЩЕ СЛУЧИЛОСЬ СТРАШНОЕ...*/
-.contacts_marker {
-  position: absolute;
-}
 
 .contacts-info {
-  position: absolute;
   width: 319px;
   height: 308px;
   background-color: var(--basic-background);
