@@ -412,8 +412,9 @@ img {
   position: absolute;
   width: 100%;
   height: inherit;
-  box-sizing: border-box;
-  background-image: image(img/map 1.png);
+  background-image: url(img/map 1.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: lightgrey;
   /*Не считывает карту =(*/
 }
