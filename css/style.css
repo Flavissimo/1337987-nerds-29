@@ -561,7 +561,15 @@ CATALOG*/
   background-color: var(--basic-background-header);
 }
 
-form label {
+.top-text-form {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.top-text-range{
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -656,7 +664,14 @@ input[type=radio]:hover {
   opacity: 100%;
 }
 
-.text-for-radio,
+.text-for-radio{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black-text);
+  opacity: 0.2;
+}
+
 .text-for-features {
   font-weight: 400;
   font-size: 16px;
@@ -665,7 +680,14 @@ input[type=radio]:hover {
   opacity: 0.2;
 }
 
-.text-for-radio,
+.text-for-radio{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black-text);
+  opacity: 0.3;
+}
+
 .text-for-features:visited {
   font-weight: 400;
   font-size: 16px;
@@ -674,7 +696,13 @@ input[type=radio]:hover {
   opacity: 0.3;
 }
 
-.text-for-radio,
+.text-for-radio{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--black-text);
+  opacity: 100%;
+}
 .text-for-features:hover {
   font-weight: 400;
   font-size: 16px;
