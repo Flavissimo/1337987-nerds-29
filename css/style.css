@@ -254,38 +254,38 @@ img {
 }
 
 .offers {
-  display: flex;
-  border-bottom: 2px solid #EEEEEE;
-  width: 100%;
+    border-bottom: 2px solid var(--basic-background-header);
 }
 
 .list-offers {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  grid-gap: 100px;
   list-style: none;
-  display: flex;
-  align-items: center;
+  margin-top: 80px;
+  /*display: flex;*/
 }
 
 .item-offers {
   text-align: left;
 }
 
+
 .main-topic-offers {
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin: 25px 0 16px 0;
 }
 
 .text-offers {
   font-size: 16px;
   line-height: 24px;
   color: var(--black-text);
+  margin-bottom: 32px;
 }
 
-.img-offers {
-  width: 300px;
-  height: 146px;
-}
 
 .button-websites {
   font-size: 16px;
@@ -295,6 +295,7 @@ img {
   border-radius: 3px;
   width: 160px;
   height: 50px;
+  margin-bottom: 80px;
 }
 
 .button-websites:hover {
@@ -355,18 +356,23 @@ img {
 
 /*Main Block Advantages*/
 .advantages {
-  display: flex;
+  display: grid;
+  grid-template-columns: 651px 360px;
+  grid-gap: 149px;
+  /*display: flex;*/
   border-bottom: 2px solid #EEEEEE;
-  margin: 0 auto;
 }
 
-.about-advantages {}
+.about-advantages {
+  margin-top: 73px;
+}
 
 .top-advantages {
   color: var(--basic-black);
   font-weight: normal;
   font-size: 45px;
   line-height: 45px;
+  margin-bottom: 32px;
 }
 
 .text-advantages {
@@ -383,10 +389,15 @@ img {
   line-height: 24px;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-top: 40px;
+  margin-bottom: 23px;
 }
 
 .list-advantages {
   list-style: none;
+}
+.item-advantages:last-child{
+    margin-bottom:73px;
 }
 
 .item-advantages::before {
@@ -399,6 +410,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-align: left;
+  margin-bottom:20px;
 }
 
 .statistics-adventages {}
@@ -410,15 +422,19 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-black);
+  margin-bottom: 31px;
+  text-align: center;
 }
 
 .wrapper-for-flex {
   display: flex;
-  ;
   flex-direction: row;
+  align-items: center;
 }
 
-.block-statistic {}
+.block-statistic {
+  margin-right: 20px;
+}
 
 .statistic-text {
   color: var(--black-text);
@@ -434,23 +450,30 @@ img {
 }
 
 .logo-with-color {
-  width: 360px;
-  height: 208px;
+margin-top: 39px;
+margin-bottom: 37px;
 }
 
 /*Main Partners*/
 .partners {
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 100%;
   height: 142px;
-  border-bottom: : 2px solid #EEEEEE;
-  margin: 0 auto;
-  padding-bottom: 10px;
+
+}
+.link-partners{
+  margin-right: 60px;
+  margin-left: 58px;
 }
 
 .img-partners {
   opacity: 0.2;
-  margin: 20px 40px;
   border-left: 2px solid #EEEEEE;
+  padding-left: 40px;
 }
 
 .img-partners:hover {
@@ -464,7 +487,7 @@ img {
 /*Map Position*/
 .contacts {
   position: relative;
-  margin-top: 40px;
+  margin-top: 80px;
   width: 100%;
   height: 416px;
 }
@@ -475,7 +498,7 @@ img {
   height: inherit;
   box-sizing: border-box;
   background-image: url("../img/map 1.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
   background-color: lightgrey;
 }
