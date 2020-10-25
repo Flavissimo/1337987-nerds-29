@@ -59,14 +59,19 @@
   --range-color: #00CA74;
 }
 
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
 html,
 body {
   font-family: 'Roboto', Arial, sans-serif;
   color: var(--basic-black);
   background-color: var(--basic-background-color);
   position: relative;
-  width: 1440px;
-  height: auto;
+  min-width: 1440px;
+  height: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -82,37 +87,85 @@ img {
   height: auto;
 }
 
-.main-header {
-  height: 545px;
-  background-color: var(--basic-background-header);
+.page-body {
+  display: grid;
+  min-height: 100%;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
-.logo {
-  padding-left: 140px;
-  padding-top: 48.98px;
+.main-header {
+  background-color: var(--basic-background-header);
+  min-width: inherit;
+}
+
+.main-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+
+.main-header-logo {
+  margin-top: 48px;
+}
+
+.logo:hover {
+  opacity: 0.9;
 }
 
 .logo:active {
   opacity: 0.3;
 }
 
-.main-navigation {
+.right-navigation {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+/*!!Спросить про ШИРИНУ БЛОКА!!*/
+.cart {
+  margin-top: 75px;
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.cart:link {
+  color: var(--basic-black);
+}
+
+.cart:visited {
+  color: var(--basic-black);
+}
+
+.cart:hover {
+  color: var(--basic-orange);
+}
+
+.cart:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+  border-bottom: 2px solid var(--basic-orange);
 }
 
 .site-navigation {
+  padding: 0;
+  margin: 0;
   display: flex;
+  grid-gap: 45px;
   list-style: none;
   color: var(--basic-black);
 }
 
 .list-navigation {
-  margin: 45px 10px;
   align-items: center;
+  margin-top: 75px;
 }
 
 .link-navigation {
@@ -140,31 +193,34 @@ img {
 }
 
 .main-header-representation {
-  display: block;
-  margin-left: 0 auto;
+  display: grid;
+  grid-template-columns: min-content 760px;
 }
 
-.main-heder-top {
+.main-header-top {
   font-size: 55px;
   line-height: 55px;
 }
 
 .main-header-about {
   display: block;
-  float: left;
+  /*!!Спросить про ШИРИНУ БЛОКА!!*/
 }
 
-.main-heder-text {
+.main-header-text {
   color: var(--black-text);
   font-size: 16px;
   line-height: 24px;
   width: 400px;
   height: 49px;
+  margin-top: 25px;
+  margin-bottom: 38px;
 }
 
 .main-header-slide {
   display: block;
-  float: right;
+  /*display: block;
+  float: right;*/
 }
 
 .main-header-slide-img {
@@ -192,9 +248,11 @@ img {
 }
 
 /*Main Block*/
-.container{
+.container {
   margin: 0 auto;
+  width: 1160px;
 }
+
 .offers {
   display: flex;
   border-bottom: 2px solid #EEEEEE;
@@ -490,6 +548,7 @@ img {
   width: 100%;
   height: auto;
   position: relative;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .footer-social {
@@ -513,11 +572,13 @@ img {
   height: 81px;
   border-radius: 50%;
 }
-.item-footer:hover{
+
+.item-footer:hover {
   background-color: var(--icon-social);
   background: linear-gradient(0deg, #E74246, #E74246);
 }
-.item-footer:active{
+
+.item-footer:active {
   background-color: var(--icon-social);
   background: linear-gradient(0deg, #D7373B, #D7373B);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
@@ -572,7 +633,7 @@ CATALOG*/
   text-align: left;
 }
 
-.top-text-range{
+.top-text-range {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -667,7 +728,7 @@ input[type=radio]:hover {
   opacity: 100%;
 }
 
-.text-for-radio{
+.text-for-radio {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -683,7 +744,7 @@ input[type=radio]:hover {
   opacity: 0.8;
 }
 
-.text-for-radio:visited{
+.text-for-radio:visited {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -699,13 +760,14 @@ input[type=radio]:hover {
   opacity: 0.3;
 }
 
-.text-for-radio:hover{
+.text-for-radio:hover {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: var(--black-text);
   opacity: 100%;
 }
+
 .text-for-features:hover {
   font-weight: 400;
   font-size: 16px;
