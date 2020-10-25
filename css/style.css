@@ -505,21 +505,22 @@ margin-bottom: 37px;
 
 .contacts-info {
   position: absolute;
-  left: 140px;
-  top: 54px;
+  left: 380px;
+  top: 50px;
   width: 319px;
   height: 308px;
   background-color: var(--basic-background);
   border: 1px solid grey;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .map-dot {
   position: absolute;
   width: 231px;
   height: 190px;
-  left: 50%;
-  top: 86px;
+  left: 55%;
+  bottom: 140px;
   background-image: url("../img/map-marker 1.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -532,19 +533,25 @@ margin-bottom: 37px;
   font-weight: bold;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin-top:49px;
+  margin-bottom:22px;
+  text-align: center;
 }
+/*!!!Спросить про выравнивание по левому краю, нужен див?*/
 
 .text-contacts {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
-  /*!Через запятую не срабатывает свойства на оба селектора!*/
+margin-bottom: 30px;
+text-align: center;
 }
 
 .link-contacts {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
+  text-align: left;
 }
 
 .button-contacts {
@@ -553,6 +560,8 @@ margin-bottom: 37px;
   color: var(--basic-white);
   background-color: var(--neutral-orange-btn);
   border-radius: 3px;
+  margin-top: 38px;
+  text-transform: uppercase;
 }
 
 .button-contacts:hover {
