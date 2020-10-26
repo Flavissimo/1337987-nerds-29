@@ -657,8 +657,20 @@ margin-left: 9px;
 CATALOG*/
 /*боковая форма*/
 .main-header-catalog {
-  height: 355px;
+  display:grid;
+  grid-template-rows: 1fr 1fr;
   background-color: var(--basic-background-header);
+}
+.menu-title{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.menu-title h1{
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
 }
 
 .top-text-form {
