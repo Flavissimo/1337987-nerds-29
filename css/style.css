@@ -688,6 +688,7 @@ CATALOG*/
   align-items: flex-start;
   justify-content: center;
 }
+/*СПРОСИТЬ!!! Явно под "Магазин готовых шаблонов" bottom больше, как правильно задать в grid этот отступ? */
 
 .menu-title-magazin {
   font-family: 'RobotoMedium';
