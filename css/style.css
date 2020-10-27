@@ -103,7 +103,7 @@ img {
 
 .main-navigation {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   font-family: 'RobotoMedium';
   font-size: 16px;
   line-height: 30px;
@@ -130,8 +130,23 @@ img {
 }
 
 .cart {
-  margin-top: 75px;
+  display: block;
+  position: relative;
   padding-bottom: 10px;
+}
+
+/*СПРОСИТЬ! При наведении border-bottom заходит на корзину. Это так и должно быть? */
+.cart::before {
+  content: " ";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: -35px;
+  top: 7px;
+  background-image: url("../img/cart-icon.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  display: inline-block;
 }
 
 .cart:link {
@@ -156,7 +171,7 @@ img {
   padding: 0;
   margin: 0;
   display: flex;
-  grid-gap: 45px;
+  flex-wrap: wrap;
   list-style: none;
 }
 
@@ -166,6 +181,8 @@ img {
 }
 
 .link-navigation {
+  display: block;
+  margin-left: 45px;
   color: var(--basic-black);
 }
 
@@ -225,8 +242,6 @@ img {
 }
 
 .main-header-btn {
-  width: 240px;
-  height: 50px;
   border-radius: 3px;
   color: var(--basic-white);
   background-color: var(--neutral-orange-btn);
@@ -234,6 +249,7 @@ img {
   text-align: center;
   font-family: 'RobotoMedium';
   text-transform: uppercase;
+  padding: 17px 54px 15px;
 }
 
 .main-header-btn:hover {
@@ -688,8 +704,8 @@ CATALOG*/
   align-items: flex-start;
   justify-content: center;
 }
-/*СПРОСИТЬ!!! Явно под "Магазин готовых шаблонов" bottom больше, как правильно задать в grid этот отступ? */
 
+/*СПРОСИТЬ!!! Явно под "Магазин готовых шаблонов" bottom больше, как правильно задать в grid этот отступ? */
 .menu-title-magazin {
   font-family: 'RobotoMedium';
   color: var(--basic-black);
@@ -1061,8 +1077,8 @@ input[type=submit]:active {
 .gallery-img {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
 /*Pagination*/
