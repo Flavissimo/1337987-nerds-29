@@ -60,6 +60,7 @@
   --range-color: #00CA74;
   --triangle-color: #231F20;
   --triangle-hover: #A6A6A6;
+  --border-for-pagination: #DBDBDB;
 }
 
 *, *::before, *::after {
@@ -688,8 +689,9 @@ CATALOG*/
 }
 
 .menu-title-magazin {
+  font-family: 'RobotoMedium';
   color: var(--basic-black);
-  font-family: 'RobotoMedium', sans-serif;
+  font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
@@ -715,17 +717,8 @@ CATALOG*/
   margin-bottom: 46px;
 }
 
-.top-text-form {
-  margin-top: 54px;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-align: left;
-}
-
 .top-text-range {
-  font-family: 'RobotoBold', sans-serif;
+  font-family: 'RobotoBold';
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
@@ -792,6 +785,8 @@ CATALOG*/
 .list-flex-aside {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 14px;
   align-items: center;
   list-style: none;
@@ -799,11 +794,21 @@ CATALOG*/
 }
 
 .aside-text {
+  font-family: 'Roboto';
   text-transform: uppercase;
   font-size: 16px;
   line-height: 22px;
   color: var(--black-text);
-  margin-right: 11px;
+}
+
+.top-text-form {
+  margin-top: 54px;
+  font-family: 'RobotoBold';
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 16px;
 }
 
 input[type=text] {
@@ -815,8 +820,10 @@ input[type=text] {
   text-align: center;
   margin-left: 12px;
 }
-
+/*СПРОСИТЬ!!!! ПРО ОФОРМЛЕНИЕ САМИХ ИНПУТОВ: увеличить круги и квадраты*/
 input[type=radio] {
+  width: 25px;
+  height: 25px;
   color: var(--black-text);
   opacity: 0.8;
   margin-right: 11px;
@@ -837,7 +844,7 @@ input[type=radio]:hover {
 }
 
 .aside-item {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
   font-size: 16px;
   line-height: 19px;
   color: var(--black-text);
@@ -862,6 +869,8 @@ input[type=radio]:hover {
 }
 
 input[type="checkbox"] {
+  width:23px;
+  height:23px;
   margin-right: 11px;
   color: var(--black-text);
   opacity: 0.8;
@@ -880,6 +889,7 @@ input[type="checkbox"]:hover {
 input[type="submit"] {
   width: 260px;
   height: 50px;
+  font-family: 'RobotoMedium';
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
@@ -921,6 +931,7 @@ input[type=submit]:active {
 }
 
 .main-top-sort {
+  font-family: 'RobotoBold';
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
@@ -932,6 +943,7 @@ input[type=submit]:active {
   list-style: none;
   justify-self: flex-start;
   align-items: center;
+  font-family: 'Roboto';
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
@@ -944,6 +956,7 @@ input[type=submit]:active {
 
 .menu-link-sort {
   text-decoration: none;
+    color: var(--basic-black);
   opacity: 30%
 }
 
@@ -1054,6 +1067,7 @@ input[type=submit]:active {
 .gallery-pagination {
   display: flex;
   align-items: center;
+  font-family: 'RobotoMedium';
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1062,7 +1076,7 @@ input[type=submit]:active {
 .gallery-page {
   margin-right: 11px;
   text-align: center;
-  background: #EEEEEE;
+  background: var(--basic-background-header);
   color: var(--basic-black);
   border-radius: 3px;
   box-sizing: border-box;
@@ -1073,26 +1087,32 @@ input[type=submit]:active {
   padding: 17px 77px 15px 78px;
   box-sizing: border-box;
   text-transform: uppercase;
-  background: #EEEEEE;
+  background: var(--basic-background-header);
   color: var(--basic-black);
   text-align: center;
   border-radius: 3px;
 }
 
 .gallery-page:hover {
-  background: #DFDFDF;
+  background: var(--hover-grey-field);
 }
 
 .gallery-next:hover {
-  background: #DFDFDF;
+  background: var(--hover-grey-field);
 }
+/*СПРОСИТЬ!! Что подразумевается под "активный пункт" у псевдоклассов?!
+.gallery-page:активный пункт{
+border: 3px solid var(--border-for-pagination);
+background-color: var(--basic-background);
+}
+*/
 
 .gallery-page:active {
-  background: #D5D5D5;
+  background: var(--active-grey-field);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
 
 .gallery-next:active {
-  background: #D5D5D5;
+  background:  var(--active-grey-field);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
 }
