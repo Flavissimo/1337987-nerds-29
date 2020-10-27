@@ -37,6 +37,7 @@
   --basic-white: #FFFFFF;
   --basic-yellow: #EFC84A;
   --basic-grey: #666666;
+  --footer-text: #444444;
   /*Buttons color*/
   --neutral-orange-btn: #FB565A;
   --hover-orange-btn: #E74246;
@@ -662,13 +663,13 @@ img {
 
 .footer-text h2 {
   color: var(--basic-black);
-  font-weight: bold;
+  font-family: 'RobotoBold';
   font-size: 36px;
   line-height: 36px;
 }
 
 .footer-text p {
-  color: #444444;
+  color: var(--footer-text);
   font-size: 16px;
   line-height: 22px;
   margin-top: 10px;
