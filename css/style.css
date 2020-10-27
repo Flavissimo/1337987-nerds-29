@@ -1,4 +1,4 @@
-@fon-face {
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -7,7 +7,7 @@
     url("/fonts/roboto.woff") format("woff");
 }
 
-@fon-face {
+@font-face {
   font-family: 'RobotoBold';
   font-style: normal;
   font-weight: 700;
@@ -16,7 +16,7 @@
     url("/fonts/robotobold.woff") format("woff");
 }
 
-@fon-face {
+@font-face {
   font-family: 'RobotoMedium';
   font-style: normal;
   font-weight: 500;
@@ -129,7 +129,6 @@ img {
   margin-top: 75px;
 }
 
-/*!!Спросить про ШИРИНУ БЛОКА!!*/
 .cart {
   margin-top: 75px;
   font-size: 16px;
@@ -207,7 +206,6 @@ img {
 
 .main-header-about {
   display: block;
-  /*!!Спросить про ШИРИНУ БЛОКА!!*/
 }
 
 .main-header-text {
@@ -540,7 +538,7 @@ img {
   text-align: center;
 }
 
-/*!!!Спросить про выравнивание по левому краю, нужен див?*/
+
 .text-contacts {
   font-size: 16px;
   line-height: 18px;
@@ -667,6 +665,7 @@ CATALOG*/
   align-items: flex-start;
   justify-content: center;
 }
+
 /*СПРОСИТЬ!!!!! ШРИФТ НЕ СЧИТЫВАЕТ!*/
 .menu-title-magazin {
   color: var(--basic-black);
@@ -952,19 +951,23 @@ input[type=submit]:active {
   border-right: 8px solid transparent;
   border-top: 16px solid var(--triangle-color);
 }
-.scroll-triangle-left:hover{
-border-bottom: 16px solid var(--triangle-hover);
+
+.scroll-triangle-left:hover {
+  border-bottom: 16px solid var(--triangle-hover);
 }
-.scroll-triangle-right:hover{
-border-top: 16px solid var(--triangle-hover);
+
+.scroll-triangle-right:hover {
+  border-top: 16px solid var(--triangle-hover);
 }
-.scroll-triangle-left:active{
-border-bottom: 16px solid var(--triangle-hover);
-opacity:30%;
+
+.scroll-triangle-left:active {
+  border-bottom: 16px solid var(--triangle-hover);
+  opacity: 30%;
 }
-.scroll-triangle-right:active{
-border-top: 16px solid var(--triangle-hover);
-opacity:30%;
+
+.scroll-triangle-right:active {
+  border-top: 16px solid var(--triangle-hover);
+  opacity: 30%;
 }
 
 /*Gallery*/
@@ -997,10 +1000,10 @@ opacity:30%;
   border-radius: 50%;
   margin-left: 9px;
 }
-.gallery-path:first-child{
-    margin-left: 15px;
-}
 
+.gallery-path:first-child {
+  margin-left: 15px;
+}
 
 .block-with-dots {
   display: flex;
