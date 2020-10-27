@@ -108,8 +108,6 @@ img {
   line-height: 30px;
   color: var(--basic-black);
   text-transform: uppercase;
-  /*display: flex;
-  flex-wrap: wrap;*/
 }
 
 .main-header-logo {
@@ -264,7 +262,6 @@ img {
   grid-gap: 100px;
   list-style: none;
   margin-top: 80px;
-  /*display: flex;*/
 }
 
 .item-offers {
@@ -372,7 +369,6 @@ img {
   display: grid;
   grid-template-columns: 651px 360px;
   grid-gap: 149px;
-  /*display: flex;*/
   border-bottom: 2px solid #EEEEEE;
 }
 
@@ -486,7 +482,7 @@ img {
   border-bottom: 2px solid var(--basic-background-header);
 }
 
-/*СПРОСИТЬ! Бордеры на макете одинаковые, а у меня зависят от контента...*/
+/*СПРОСИТЬ! Бордеры на макете одинаковые, а у меня зависят от контента...Что не так?*/
 .link-partners {
   margin-left: 45px;
   border-left: 2px solid #EEEEEE;
