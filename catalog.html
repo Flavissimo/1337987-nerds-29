@@ -40,44 +40,50 @@
   <div class="wrapper-catalog container">
     <aside class="aside-bar">
       <form method="get">
-        <p class="top-text-range">Стоимость:</p>
-        <div class="block-for-range">
-          <div class="round-for-range-left">
-            <div class="dot-for-range"></div>
+        <fieldset class="aside-form">
+          <p class="top-text-range">Стоимость:</p>
+          <div class="block-for-range">
+            <div class="round-for-range-left">
+              <div class="dot-for-range"></div>
+            </div>
+            <div class="range-green" style="background-color:#00CA74"></div>
+            <div class="round-for-range-right">
+              <div class="dot-for-range"></div>
+            </div>
+            <div class="range-grey" style="background-color:#D7DCDF"></div>
+            <!--<input type="range" name="range" min="0" max="15000" value="7500" step="1">-->
           </div>
-          <div class="range-green" style="background-color:#00CA74"></div>
-          <div class="round-for-range-right">
-            <div class="dot-for-range"></div>
-          </div>
-          <div class="range-grey" style="background-color:#D7DCDF"></div>
-          <!--<input type="range" name="range" min="0" max="15000" value="7500" step="1">-->
-        </div><br>
-        <label for="number"> </label><br>
-        <p class="aside-text">
-          От<input type="text" name="number-min" value="0" id="number">
-          До<input type="text" name="number-max" value="15000"></p>
-        <br>
-        <label class="top-text-form" for="radio">Сетка:</label><br>
-        <input type="radio" name="grid" value="rad1" id="radio">
-        <span class="text-for-radio">Адаптивная</span> <br>
-        <input type="radio" name="grid" value="rad2">
-        <span class="text-for-radio">Фиксированная</span> <br>
-        <input type="radio" name="grid" value="rad3">
-        <span class="text-for-radio">Резиновая</span> <br>
-        <br>
-        <label class="top-text-form" for="features">Особенности:</label><br>
-        <input type="checkbox" name="slider" value="a1" id="features" checked>
-        <span class="text-for-features">Слайдер</span><br>
-        <input type="checkbox" name="advantages" value="a2">
-        <span class="text-for-features">Блок преимущесвт</span><br>
-        <input type="checkbox" name="news" value="a3" checked>
-        <span class="text-for-features">Новости</span><br>
-        <input type="checkbox" name="gallery" value="a4">
-        <span class="text-for-features">Галерея</span><br>
-        <input type="checkbox" name="basket" value="a5">
-        <span class="text-for-features">Корзина</span><br>
-        <br>
-        <input type="submit" name="submit" value="ПОКАЗАТЬ">
+        </fieldset>
+        <fieldset class="aside-form">
+          <label for="number"> </label>
+          <ul>
+            <!--<p class="aside-text"></p>-->
+            <li class="aside-text"> От<input type="text" name="number-min" value="0" id="number"></li>
+            <li class="aside-text"> До<input type="text" name="number-max" value="15000"></li>
+          </ul>
+        </fieldset>
+        <fieldset class="aside-form">
+          <label class="top-text-form" for="radio">Сетка:</label>
+          <ul>
+            <li class="aside-item"><input type="radio" name="grid" value="rad1" id="radio">Адаптивная</li>
+            <li class="aside-item"> <input type="radio" name="grid" value="rad2">Фиксированная</li>
+            <li class="aside-item"><input type="radio" name="grid" value="rad3">Резиновая</li>
+
+            <ul>
+        </fieldset>
+        <fieldset class="aside-form">
+          <label class="top-text-form" for="features">Особенности:</label><br>
+          <li class="aside-item"> <input type="checkbox" name="slider" value="a1" id="features" checked>Слайдер</li>
+          <!--  <span class="text-for-features">Слайдер</span><br>-->
+          <li class="aside-item"> <input type="checkbox" name="advantages" value="a2">Блок преимущесвт</li>
+          <li class="aside-item"> <input type="checkbox" name="news" value="a3" checked>Новости</li>
+          <li class="aside-item"><input type="checkbox" name="gallery" value="a4">Галерея</li>
+          <li class="aside-item"> <input type="checkbox" name="basket" value="a5">Корзина</li>
+
+        </fieldset>
+        <fieldset class="aside-form">
+          <input type="submit" name="submit" value="ПОКАЗАТЬ">
+        </fieldset>
       </form>
 
     </aside>
