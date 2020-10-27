@@ -56,7 +56,7 @@
         </fieldset>
         <fieldset class="aside-form">
           <label for="number"> </label>
-          <ul>
+          <ul class="list-flex-aside">
             <!--<p class="aside-text"></p>-->
             <li class="aside-text"> От<input type="text" name="number-min" value="0" id="number"></li>
             <li class="aside-text"> До<input type="text" name="number-max" value="15000"></li>
@@ -64,22 +64,23 @@
         </fieldset>
         <fieldset class="aside-form">
           <label class="top-text-form" for="radio">Сетка:</label>
-          <ul>
+          <ul class="list-aside">
             <li class="aside-item"><input type="radio" name="grid" value="rad1" id="radio">Адаптивная</li>
             <li class="aside-item"> <input type="radio" name="grid" value="rad2">Фиксированная</li>
             <li class="aside-item"><input type="radio" name="grid" value="rad3">Резиновая</li>
 
-            <ul>
+          </ul>
         </fieldset>
         <fieldset class="aside-form">
-          <label class="top-text-form" for="features">Особенности:</label><br>
-          <li class="aside-item"> <input type="checkbox" name="slider" value="a1" id="features" checked>Слайдер</li>
-          <!--  <span class="text-for-features">Слайдер</span><br>-->
-          <li class="aside-item"> <input type="checkbox" name="advantages" value="a2">Блок преимущесвт</li>
-          <li class="aside-item"> <input type="checkbox" name="news" value="a3" checked>Новости</li>
-          <li class="aside-item"><input type="checkbox" name="gallery" value="a4">Галерея</li>
-          <li class="aside-item"> <input type="checkbox" name="basket" value="a5">Корзина</li>
-
+          <label class="top-text-form" for="features">Особенности:</label>
+          <ul class="list-aside">
+            <li class="aside-item"> <input type="checkbox" name="slider" value="a1" id="features" checked>Слайдер</li>
+            <!--  <span class="text-for-features">Слайдер</span><br>-->
+            <li class="aside-item"> <input type="checkbox" name="advantages" value="a2">Блок преимущесвт</li>
+            <li class="aside-item"> <input type="checkbox" name="news" value="a3" checked>Новости</li>
+            <li class="aside-item"><input type="checkbox" name="gallery" value="a4">Галерея</li>
+            <li class="aside-item"> <input type="checkbox" name="basket" value="a5">Корзина</li>
+          </ul>
         </fieldset>
         <fieldset class="aside-form">
           <input type="submit" name="submit" value="ПОКАЗАТЬ">
