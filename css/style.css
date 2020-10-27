@@ -102,10 +102,11 @@ img {
 .main-navigation {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  font-family: 'Roboto';
+  font-family: 'RobotoMedium';
   font-size: 16px;
   line-height: 30px;
   color: var(--basic-black);
+  text-transform: uppercase;
   /*display: flex;
   flex-wrap: wrap;*/
 }
@@ -130,10 +131,6 @@ img {
 
 .cart {
   margin-top: 75px;
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--basic-black);
-  text-transform: uppercase;
   padding-bottom: 10px;
 }
 
@@ -161,7 +158,6 @@ img {
   display: flex;
   grid-gap: 45px;
   list-style: none;
-  color: var(--basic-black);
 }
 
 .list-navigation {
@@ -171,7 +167,6 @@ img {
 
 .link-navigation {
   color: var(--basic-black);
-  text-transform: uppercase;
 }
 
 .link-navigation:link {
@@ -195,37 +190,38 @@ img {
 
 .main-header-representation {
   display: grid;
-  grid-template-columns: min-content 760px;
+  grid-template-columns: 400px 760px;
 }
 
 .main-header-top {
+  font-family: 'RobotoMedium';
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
 
 .main-header-about {
   display: block;
+  margin-top: 78px;
 }
 
 .main-header-text {
+  font-family: 'Roboto';
   color: var(--black-text);
   font-size: 16px;
   line-height: 24px;
-  width: 400px;
-  height: 49px;
-  margin-top: 25px;
   margin-bottom: 38px;
 }
 
 .main-header-slide {
   display: block;
-  /*display: block;
-  float: right;*/
+  margin: 0;
+  padding: 0;
 }
 
+/*Чтобы растянуть картинку задала height:100%*/
 .main-header-slide-img {
-  width: 760px;
-  height: 431px;
+  height: 100%;
 }
 
 .main-header-btn {
@@ -234,6 +230,10 @@ img {
   border-radius: 3px;
   color: var(--basic-white);
   background-color: var(--neutral-orange-btn);
+  border: none;
+  text-align: center;
+  font-family: 'RobotoMedium';
+  text-transform: uppercase;
 }
 
 .main-header-btn:hover {
@@ -271,6 +271,7 @@ img {
 }
 
 .main-topic-offers {
+  font-family: 'RobotoBold';
   font-size: 24px;
   line-height: 30px;
   text-transform: uppercase;
@@ -279,6 +280,7 @@ img {
 }
 
 .text-offers {
+  font-family: 'Roboto';
   font-size: 16px;
   line-height: 24px;
   color: var(--black-text);
@@ -286,11 +288,15 @@ img {
 }
 
 .button-websites {
+  font-family: 'RobotoMedium';
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
   background-color: var(--neutral-orange-btn);
   color: var(--basic-white);
   border-radius: 3px;
+  border: none;
   width: 160px;
   height: 50px;
   margin-bottom: 80px;
@@ -309,6 +315,10 @@ img {
 }
 
 .button-applications {
+  font-family: 'RobotoMedium';
+  text-transform: uppercase;
+  border: none;
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   background-color: var(--neutral-green-btn);
@@ -331,8 +341,12 @@ img {
 }
 
 .button-presentation {
+  font-family: 'RobotoMedium';
+  text-transform: uppercase;
+  border: none;
   font-size: 16px;
   line-height: 18px;
+  font-weight: 500;
   background-color: var(--neutral-yellow-btn);
   color: var(--basic-white);
   border-radius: 3px;
@@ -366,23 +380,24 @@ img {
 }
 
 .top-advantages {
+  font-family: 'RobotoMedium';
   color: var(--basic-black);
-  font-weight: normal;
+  font-weight: 500;
   font-size: 45px;
   line-height: 45px;
   margin-bottom: 32px;
 }
 
 .text-advantages {
+  font-family: 'Roboto';
   color: var(--black-text);
   font-size: 16px;
   line-height: 24px;
   text-align: left;
-  font-weight: 400;
 }
 
 .top-main-advantages {
-  font-weight: bold;
+  font-family: 'RobotoBold';
   font-size: 16px;
   line-height: 24px;
   text-transform: uppercase;
@@ -399,6 +414,7 @@ img {
   margin-bottom: 73px;
 }
 
+/*СПРОСИТЬ!! Отличается от макета =(*/
 .item-advantages::before {
   content: "⸺";
   color: var(--long-dash);
@@ -406,6 +422,7 @@ img {
 }
 
 .item-advantages {
+  font-family: 'Roboto';
   font-size: 16px;
   line-height: 24px;
   text-align: left;
@@ -415,14 +432,13 @@ img {
 .statistics-adventages {}
 
 .statistics-main-adventages {
-  font-weight: 700;
+  font-family: 'RobotoBold';
   text-align: center;
   text-transform: uppercase;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-black);
   margin-bottom: 31px;
-  text-align: center;
 }
 
 .wrapper-for-flex {
@@ -436,13 +452,14 @@ img {
 }
 
 .statistic-text {
+  font-family: 'Roboto';
   color: var(--black-text);
   font-size: 16px;
   line-height: 18px;
 }
 
 .statistic-numeral {
-  font-weight: bold;
+  font-family: 'RobotoBold';
   color: var(--basic-black);
   font-size: 45px;
   line-height: 64px;
@@ -458,21 +475,28 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 100%;
   height: 142px;
   border-bottom: 2px solid var(--basic-background-header);
 }
 
+/*СПРОСИТЬ! Бордеры на макете одинаковые, а у меня зависят от контента...*/
 .link-partners {
-  margin-right: 60px;
-  margin-left: 58px;
+  margin-left: 45px;
+  border-left: 2px solid #EEEEEE;
+}
+
+.link-partners:first-child {
+  border-left: none;
 }
 
 .img-partners {
   opacity: 0.2;
-  border-left: 2px solid #EEEEEE;
   padding-left: 40px;
 }
 
@@ -498,70 +522,72 @@ img {
   height: inherit;
   box-sizing: border-box;
   background-image: url("../img/map 1.png");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-position: center;
-  background-color: lightgrey;
-}
-
-.contacts-info {
-  position: absolute;
-  left: 380px;
-  top: 50px;
-  width: 319px;
-  height: 308px;
-  background-color: var(--basic-background);
-  text-align: center;
-  box-sizing: border-box;
+  background-color: var(--basic-background-header);
 }
 
 .map-dot {
   position: absolute;
   width: 231px;
   height: 190px;
-  left: 55%;
-  bottom: 140px;
+  left: 980px;
+  top: 86px;
   background-image: url("../img/map-marker 1.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 /*Map Text*/
+.block-info {
+  position: absolute;
+  top: 54px;
+  width: 319px;
+  height: 308px;
+  background-color: var(--basic-background);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.contacts-info {
+  text-align: left;
+  margin: 22px 39px 37px 50px;
+}
+
 .main-top-info-contacts {
+  font-family: 'RobotoBold';
   font-size: 18px;
   line-height: 30px;
-  font-weight: bold;
   text-transform: uppercase;
   color: var(--basic-black);
   margin-top: 49px;
-  margin-bottom: 22px;
-  text-align: center;
 }
 
 .text-contacts {
+  font-family: 'Roboto';
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
-  margin-bottom: 15px;
-  text-align: center;
 }
 
 .link-contacts {
+  font-family: 'Roboto';
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-grey);
-  text-align: left;
 }
 
 .button-contacts {
+  font-family: 'RobotoMedium';
+  font-weight: 500;
   font-size: 16px;
   line-height: 18px;
-  font-weight: 500;
   width: 219px;
   height: 50px;
   color: var(--basic-white);
   background-color: var(--neutral-orange-btn);
   border-radius: 3px;
-  margin-top: 38px;
+  border: none;
   text-transform: uppercase;
 }
 
