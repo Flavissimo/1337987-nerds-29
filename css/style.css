@@ -802,11 +802,11 @@ CATALOG*/
   display: inline-block;
   cursor: pointer;
   position: relative;
-  padding-left: 40px;
 }
 
-/*заменяем скрытый элемент псевдо классом :before*/
-.list-aside label::before {
+/*заменяем скрытый элемент псевдо классом :before
+НУЖНО РАЗБИРАТЬСЯ!НЕ понимаю охват label*/
+/*.list-aside label::before {
   content: "";
   position: absolute;
   left: 0;
@@ -816,7 +816,7 @@ CATALOG*/
   border-radius: 50%;
   border: 4px solid var(--gallery-back);
   opacity: 0.3;
-}
+}*/
 
 .list-flex-aside {
   display: flex;
@@ -867,10 +867,6 @@ input[type="checkbox"] {
   display: none;
 }
 
-input[type=radio]:hover+label {
-  opacity: 1;
-  border: 4px solid var(--gallery-back);
-}
 
 /*input[type=radio]+label {
   width: 25px;
