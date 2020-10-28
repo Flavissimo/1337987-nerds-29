@@ -279,6 +279,7 @@ img {
   grid-gap: 100px;
   list-style: none;
   margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .item-offers {
@@ -310,11 +311,9 @@ img {
   text-transform: uppercase;
   background-color: var(--neutral-orange-btn);
   color: var(--basic-white);
+  padding: 17px 40px 15px 39px;
   border-radius: 3px;
   border: none;
-  width: 160px;
-  height: 50px;
-  margin-bottom: 80px;
 }
 
 .button-websites:hover {
@@ -545,7 +544,7 @@ img {
   position: absolute;
   width: 231px;
   height: 190px;
-  left: 980px;
+  left: 55%;
   top: 86px;
   background-image: url("../img/map-marker 1.png");
   background-repeat: no-repeat;
@@ -724,17 +723,6 @@ CATALOG*/
   margin-top: 55px;
 }
 
-.aside-form {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.aside-form:nth-child(3) {
-  margin-top: 54px;
-  margin-bottom: 46px;
-}
-
 .top-text-range {
   font-family: 'RobotoBold';
   font-size: 18px;
@@ -761,6 +749,7 @@ CATALOG*/
   background-color: #FFFFFF;
   margin-left: 17px;
   margin-top: 29px;
+  cursor: pointer;
 }
 
 .dot-for-range {
@@ -770,6 +759,7 @@ CATALOG*/
   border-radius: 50%;
   box-sizing: border-box;
   margin: 8px;
+  cursor: pointer;
 }
 
 .range-green {
@@ -785,6 +775,7 @@ CATALOG*/
   border: 1px solid #ABABAB;
   background-color: #FFFFFF;
   margin-top: 29px;
+  cursor: pointer;
 }
 
 .range-grey {
@@ -794,10 +785,37 @@ CATALOG*/
   margin-right: 21px;
 }
 
+.aside-form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
 .list-aside {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+/*меняем иконку курсора на pointer*/
+.list-aside label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 40px;
+}
+
+/*заменяем скрытый элемент псевдо классом :before*/
+.list-aside label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 4px solid var(--gallery-back);
+  opacity: 0.3;
 }
 
 .list-flex-aside {
@@ -806,6 +824,7 @@ CATALOG*/
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 14px;
+  padding: 0;
   align-items: center;
   list-style: none;
   width: 260px;
@@ -819,7 +838,7 @@ CATALOG*/
   color: var(--black-text);
 }
 
-.top-text-form {
+.filter legend {
   margin-top: 54px;
   font-family: 'RobotoBold';
   font-size: 18px;
@@ -839,36 +858,46 @@ input[type=text] {
   margin-left: 12px;
 }
 
-/*СПРОСИТЬ!!!! ПРО ОФОРМЛЕНИЕ САМИХ ИНПУТОВ: увеличить круги и квадраты*/
+/*прячем радио кнопку по её атрибуту*/
 input[type=radio] {
+  display: none;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type=radio]:hover+label {
+  opacity: 1;
+  border: 4px solid var(--gallery-back);
+}
+
+/*input[type=radio]+label {
   width: 25px;
   height: 25px;
   color: var(--black-text);
   opacity: 0.8;
-  margin-right: 11px;
 }
 
-input[type=radio]:visited {
+input[type=radio]:visited+label {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
   opacity: 0.3;
 }
 
-input[type=radio]:hover {
+input[type=radio]:hover+label {
   color: var(--black-text);
   font-size: 16px;
   line-height: 20px;
   opacity: 1;
-}
-
+}*/
 .aside-item {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 19px;
   color: var(--black-text);
   opacity: 0.8;
-  list-style: none;
 }
 
 .aside-item :visited {
@@ -887,24 +916,22 @@ input[type=radio]:hover {
   opacity: 100%;
 }
 
-input[type="checkbox"] {
+/*input[type="checkbox"]+label {
   width: 23px;
   height: 23px;
-  margin-right: 11px;
   color: var(--black-text);
   opacity: 0.8;
 }
 
-input[type="checkbox"]:visited {
+input[type="checkbox"]:visited+label {
   color: var(--black-text);
   opacity: 0.3;
 }
 
-input[type="checkbox"]:hover {
+input[type="checkbox"]:hover+label {
   color: var(--black-text);
   opacity: 1;
-}
-
+}*/
 input[type="submit"] {
   width: 260px;
   height: 50px;

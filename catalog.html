@@ -39,47 +39,43 @@
   <!--Блок формы выбора-->
   <div class="wrapper-catalog container">
     <aside class="aside-bar">
-      <form method="get" action="https://echo.htmlacademy.ru/">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
         <fieldset class="aside-form">
           <p class="top-text-range">Стоимость:</p>
           <div class="block-for-range">
-            <div class="round-for-range-left">
+            <div class="round-for-range-left" tabindex="0">
               <div class="dot-for-range"></div>
             </div>
             <div class="range-green" style="background-color:#00CA74"></div>
-            <div class="round-for-range-right">
+            <div class="round-for-range-right" tabindex="0">
               <div class="dot-for-range"></div>
             </div>
             <div class="range-grey" style="background-color:#D7DCDF"></div>
-            <!--<input type="range" name="range" min="0" max="15000" value="7500" step="1">-->
           </div>
         </fieldset>
         <fieldset class="aside-form">
           <label for="number"> </label>
           <ul class="list-flex-aside">
-            <!--<p class="aside-text"></p>-->
-            <li class="aside-text"> От<input type="text" name="number-min" value="0" id="number"></li>
-            <li class="aside-text"> До<input type="text" name="number-max" value="15000"></li>
+            <li class="aside-text"> От<input type="text" name="number-min" value="0" id="number-min"></li>
+            <li class="aside-text"> До<input type="text" name="number-max" value="15000" id="number-max"></li>
           </ul>
         </fieldset>
         <fieldset class="aside-form">
-          <label class="top-text-form" for="radio">Сетка:</label>
+          <legend>Сетка:</legend>
           <ul class="list-aside">
-            <li class="aside-item"><input type="radio" name="grid" value="rad1" id="radio">Адаптивная</li>
-            <li class="aside-item"> <input type="radio" name="grid" value="rad2">Фиксированная</li>
-            <li class="aside-item"><input type="radio" name="grid" value="rad3">Резиновая</li>
-
+            <li class="aside-item"><input class="visually-hidden input-chekbox" type="radio" name="grid" value="rad1" id="rad1"><label for="rad1">Адаптивная</label></li>
+            <li class="aside-item"> <input class="visually-hidden input-chekbox" type="radio" name="grid" value="rad2" id="rad2"><label for="rad2">Фиксированная</label></li>
+            <li class="aside-item"><input class="visually-hidden input-chekbox" type="radio" name="grid" value="rad3" id="rad3"><label for="rad3">Резиновая</label></li>
           </ul>
         </fieldset>
         <fieldset class="aside-form">
-          <label class="top-text-form" for="features">Особенности:</label>
+          <legend>Особенности:</legend>
           <ul class="list-aside">
-            <li class="aside-item"> <input type="checkbox" name="slider" value="a1" id="features" checked>Слайдер</li>
-            <!--  <span class="text-for-features">Слайдер</span><br>-->
-            <li class="aside-item"> <input type="checkbox" name="advantages" value="a2">Блок преимущесвт</li>
-            <li class="aside-item"> <input type="checkbox" name="news" value="a3" checked>Новости</li>
-            <li class="aside-item"><input type="checkbox" name="gallery" value="a4">Галерея</li>
-            <li class="aside-item"> <input type="checkbox" name="basket" value="a5">Корзина</li>
+            <li class="aside-item"> <input class="visually-hidden" type="checkbox" name="slider" value="a1" id="features-slider" checked><label for="features-slider">Слайдер</label></li>
+            <li class="aside-item"> <input class="visually-hidden" type="checkbox" name="advantages" value="a2" id="features-advantages"><label for="features-advantages">Блок преимущесвт</label></li>
+            <li class="aside-item"> <input class="visually-hidden" type="checkbox" name="news" value="a3" id="features-news" checked><label for="features-news">Новости</label></li>
+            <li class="aside-item"><input class="visually-hidden" type="checkbox" name="gallery" value="a4" id="features-gallery"><label for="features-gallery">Галерея</label></li>
+            <li class="aside-item"> <input class="visually-hidden" type="checkbox" name="basket" value="a5" id="features-basket"><label for="features-basket">Корзина</label></li>
           </ul>
         </fieldset>
         <fieldset class="aside-form">
@@ -182,9 +178,9 @@
               ул. Б. Конюшенная, д. 19/8 </p>
             <a href="tel:+78122757575" class="link-contacts">тел. +7(812) 275-75-75</a><br>
           </section>
-            <button class="button-contacts" type="button">Напишите нам</button>
+          <button class="button-contacts" type="button">Напишите нам</button>
         </div>
-          <div class="map-dot"></div>
+        <div class="map-dot"></div>
       </div>
     </div>
   </div>
