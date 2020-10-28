@@ -207,6 +207,7 @@ img {
 .main-header-representation {
   display: grid;
   grid-template-columns: 400px 760px;
+  position: relative;
 }
 
 .main-header-top {
@@ -216,9 +217,44 @@ img {
   font-weight: 500;
 }
 
+/*СЛАЙДЕР!*/
 .main-header-about {
+  border: 1px solid red;
+  /*ДЛЯ ПОНИМАНИЯ*/
   display: block;
   margin-top: 78px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
+/*КНОПКИ*/
+.slider-controls {
+  position: absolute;
+  top: 431px;
+  right: 533px;
+  z-index: 20;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  padding: 0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-background);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .current {
+  background-color: red;/КАК ПРИМЕР/
 }
 
 .main-header-text {
@@ -256,23 +292,6 @@ img {
   color: var(--basic-white);
   opacity: 0.3;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-}
-.slider-controls{
-  position:absolute;
-  top:431px;
-  right:533px;
-   z-index: 20;
-   display: flex;
-  width: 88px;
-  justify-content: space-between;
-}
-.slider-controls button {
-  padding:0;
-  width: 18px;
-  height: 18px;
-  background-color: var(--basic-background);
-  border-radius: 50%;
-  cursor: pointer;
 }
 
 /*Main Block*/
@@ -1117,7 +1136,7 @@ input[type=submit]:active {
   margin: 0;
   padding: 0;
   position: relative;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .gallery-img {
@@ -1140,7 +1159,8 @@ input[type=submit]:active {
   transform: translateY(100%);
   transition: transform .2s ease-out;
 }
-.gallery-img-wrapper:hover .popap-block{
+
+.gallery-img-wrapper:hover .popap-block {
   transform: translateY(0);
 }
 
@@ -1180,10 +1200,12 @@ input[type=submit]:active {
   border-radius: 3px;
   border: none;
 }
-.price-button:hover{
-    background-color: var(--hover-orange-btn);
+
+.price-button:hover {
+  background-color: var(--hover-orange-btn);
 }
-.price-button:active{
+
+.price-button:active {
   background-color: var(--active-orange-btn);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
 }
