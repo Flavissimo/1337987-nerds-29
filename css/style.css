@@ -231,15 +231,12 @@ img {
 }
 
 .main-header-slide {
-  display: block;
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
-/*Чтобы растянуть картинку задала height:100%*/
-.main-header-slide-img {
-  height: 100%;
-}
+
 
 .main-header-btn {
   border-radius: 3px;
@@ -267,6 +264,7 @@ img {
 .container {
   margin: 0 auto;
   width: 1160px;
+  position:relative;
 }
 
 .offers {
@@ -544,7 +542,7 @@ img {
   position: absolute;
   width: 231px;
   height: 190px;
-  left: 55%;
+  left: 58%;
   top: 86px;
   background-image: url("../img/map-marker 1.png");
   background-repeat: no-repeat;
