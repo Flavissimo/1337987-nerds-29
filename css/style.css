@@ -135,7 +135,6 @@ img {
   padding-bottom: 10px;
 }
 
-/*СПРОСИТЬ! При наведении border-bottom заходит на корзину. Это так и должно быть? */
 .cart::before {
   content: " ";
   width: 15px;
@@ -245,6 +244,7 @@ img {
   font-family: 'RobotoMedium';
   text-transform: uppercase;
   padding: 17px 54px 15px;
+  cursor: pointer;
 }
 
 .main-header-btn:hover {
@@ -256,6 +256,23 @@ img {
   color: var(--basic-white);
   opacity: 0.3;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+}
+.slider-controls{
+  position:absolute;
+  top:431px;
+  right:533px;
+   z-index: 20;
+   display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+.slider-controls button {
+  padding:0;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-background);
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 /*Main Block*/
