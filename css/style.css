@@ -453,25 +453,34 @@ img {
 
 .list-advantages {
   list-style: none;
+  position: relative;
+  padding:0;
+  margin:0;
 }
 
-.item-advantages:last-child {
-  margin-bottom: 73px;
-}
+/*УТОЧНИТЬ! НЕ УВЕРЕНА В ОФОРМЛЕНИИ!!*/
 
-/*СПРОСИТЬ!! Отличается от макета =(*/
 .item-advantages::before {
-  content: "⸺";
-  color: var(--long-dash);
+  content: " ";
   margin-right: 7px;
+  background-image: url("../img/Rectangle.svg");
+  width:25px;
+  height:2px;
+  display: inline-block;
+  margin-bottom:5px;
 }
 
 .item-advantages {
+  position:relative;
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 24px;
   text-align: left;
   margin-bottom: 20px;
+  display: block;
+}
+.item-advantages:last-child {
+  margin-bottom: 73px;
 }
 
 .statistics-adventages {}
