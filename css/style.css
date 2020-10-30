@@ -116,7 +116,7 @@ img {
 }
 
 .logo:hover {
-  opacity: 0.9;
+  opacity: 1;
 }
 
 .logo:active {
@@ -142,7 +142,7 @@ img {
   position: absolute;
   left: -35px;
   top: 7px;
-  background-image: url("../img/cart-icon.png");
+  background-image: url("../img/cart-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
   display: inline-block;
@@ -872,7 +872,7 @@ input[type=text] {
 
 .radio-box {
   position: absolute;
-    /*Чтобы не менять размер строки!*/
+  /*Чтобы не менять размер строки!*/
   margin-left: -2em;
   margin-top: -0.2em;
   width: 25px;
@@ -880,25 +880,29 @@ input[type=text] {
   background-image: url("../img/radio-off.svg");
   opacity: 0.3;
 }
+
 /*Checked*/
-.input-radio:checked + .radio-box{  /*+элемент который мы хотим оформить*/
+.input-radio:checked+.radio-box {
+  /*+элемент который мы хотим оформить*/
   background-image: url("../img/radio-on.svg");
 }
+
 /*Focus*/
-.input-radio:focus+.radio-box{
+.input-radio:focus+.radio-box {
   background-image: url("../img/radio-off.svg");
   opacity: 1;
 }
-.input-radio:checked:focus+.radio-box{
+
+.input-radio:checked:focus+.radio-box {
   background-image: url("../img/radio-on.svg");
   opacity: 1;
 }
+
 /*Disabled*/
-.input-radio:disabled+.radio-box{
+.input-radio:disabled+.radio-box {
   background-image: url("../img/radio-off.svg");
   opacity: 0.1;
 }
-
 
 /*CHECKBOX*/
 .option {
@@ -1070,37 +1074,33 @@ input[type=submit]:active {
 }
 
 .scroll-triangle-left {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-bottom: 16px solid var(--triangle-color);
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-down-dir.svg");
+  opacity: 30%;
 }
 
 .scroll-triangle-right {
-  width: 0;
-  height: 0;
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 16px solid var(--triangle-color);
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/icon-up-dir.svg");
+  opacity: 30%;
 }
 
 .scroll-triangle-left:hover {
-  border-bottom: 16px solid var(--triangle-hover);
+  opacity: 60%;
 }
 
 .scroll-triangle-right:hover {
-  border-top: 16px solid var(--triangle-hover);
+opacity:60%;
 }
 
 .scroll-triangle-left:active {
-  border-bottom: 16px solid var(--triangle-hover);
-  opacity: 30%;
+  opacity: 100%;
 }
 
 .scroll-triangle-right:active {
-  border-top: 16px solid var(--triangle-hover);
-  opacity: 30%;
+  opacity: 100%;
 }
 
 /*Gallery*/
