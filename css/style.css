@@ -823,32 +823,6 @@ CATALOG*/
   margin: 0;
 }
 
-.list-aside {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/*меняем иконку курсора на pointer*/
-.list-aside label {
-  display: inline-block;
-  cursor: pointer;
-  position: relative;
-}
-
-/*заменяем скрытый элемент псевдо классом :before
-НУЖНО РАЗБИРАТЬСЯ!НЕ понимаю охват label*/
-/*.list-aside label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  border: 4px solid var(--gallery-back);
-  opacity: 0.3;
-}*/
 .list-flex-aside {
   display: flex;
   flex-direction: row;
@@ -861,12 +835,14 @@ CATALOG*/
   width: 260px;
 }
 
-.aside-text {
-  font-family: 'Roboto';
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 22px;
-  color: var(--black-text);
+input[type=text] {
+  width: 80px;
+  height: 38px;
+  background-color: var(--basic-background-header);
+  border-radius: 3px;
+  border: none;
+  text-align: center;
+  margin-left: 12px;
 }
 
 .filter legend {
@@ -879,53 +855,117 @@ CATALOG*/
   margin-bottom: 16px;
 }
 
-input[type=text] {
-  width: 80px;
-  height: 38px;
-  background-color: var(--basic-background-header);
-  border-radius: 3px;
-  border: none;
-  text-align: center;
-  margin-left: 12px;
+/*RADIO*/
+/*Спрятали input*/
+.input-radio {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
 }
 
-/*прячем радио кнопку по её атрибуту*/
-input[type=radio] {
-  display: none;
+/*Отступы для графики*/
+.radio {
+  padding-left: 2em;
+  /*1em=24px>48px*/
 }
 
-input[type="checkbox"] {
-  display: none;
-}
-
-/*input[type=radio]+label {
+.radio-box {
+  position: absolute;
+    /*Чтобы не менять размер строки!*/
+  margin-left: -2em;
+  margin-top: -0.2em;
   width: 25px;
   height: 25px;
-  color: var(--black-text);
-  opacity: 0.8;
-}
-
-input[type=radio]:visited+label {
-  color: var(--black-text);
-  font-size: 16px;
-  line-height: 20px;
+  background-image: url("../img/radio-off.svg");
   opacity: 0.3;
 }
-
-input[type=radio]:hover+label {
-  color: var(--black-text);
-  font-size: 16px;
-  line-height: 20px;
+/*Checked*/
+.input-radio:checked + .radio-box{  /*+элемент который мы хотим оформить*/
+  background-image: url("../img/radio-on.svg");
+}
+/*Focus*/
+.input-radio:focus+.radio-box{
+  background-image: url("../img/radio-off.svg");
   opacity: 1;
-}*/
-.aside-item {
+}
+.input-radio:checked:focus+.radio-box{
+  background-image: url("../img/radio-on.svg");
+  opacity: 1;
+}
+/*Disabled*/
+.input-radio:disabled+.radio-box{
+  background-image: url("../img/radio-off.svg");
+  opacity: 0.1;
+}
+
+
+/*CHECKBOX*/
+.option {
+  display: block;
+  margin-bottom: 1em;
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 19px;
   color: var(--black-text);
-  opacity: 0.8;
+  cursor: pointer;
 }
 
+/*Спрятали input*/
+.check-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  /*убираем пробелы*/
+  /* Для Е11
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  clip:rect(0 0 0 0);*/
+}
+
+/*Отступы для графики*/
+.check {
+  padding-left: 2em;
+  /*1em=24px>48px*/
+}
+
+.check-box {
+  position: absolute;
+  /*Чтобы не менять размер строки!*/
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/checkbox-off.svg");
+  margin-left: -2em;
+  margin-top: -0.2em;
+  opacity: 0.3;
+  /*-48px*/
+}
+
+/*Cheked*/
+.check-input:checked+.check-box {
+  /*+элемент который мы хотим оформить*/
+  background-image: url("../img/checkbox-on.svg");
+}
+
+/*Focus*/
+.check-input:focus+.check-box {
+  background-image: url("../img/checkbox-off.svg");
+  opacity: 1;
+}
+
+.check-input:checked:focus+.check-box {
+  background-image: url("../img/checkbox-on.svg");
+  opacity: 1;
+}
+
+/*Disabled*/
+.check-input:disabled+.check-box {
+  opacity: 0.1;
+}
+
+/*!!!! КАК ПРИМЕНИТЬ OPACITY к label в последних двух позициях*/
 .aside-item :visited {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -942,22 +982,7 @@ input[type=radio]:hover+label {
   opacity: 100%;
 }
 
-/*input[type="checkbox"]+label {
-  width: 23px;
-  height: 23px;
-  color: var(--black-text);
-  opacity: 0.8;
-}
-
-input[type="checkbox"]:visited+label {
-  color: var(--black-text);
-  opacity: 0.3;
-}
-
-input[type="checkbox"]:hover+label {
-  color: var(--black-text);
-  opacity: 1;
-}*/
+/*Button Submit*/
 input[type="submit"] {
   width: 260px;
   height: 50px;
