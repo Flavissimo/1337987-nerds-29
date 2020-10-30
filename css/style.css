@@ -1255,7 +1255,16 @@ opacity:60%;
   box-sizing: border-box;
   padding: 17px 20px;
 }
-
+.gallery-page:first-child{
+  margin-right: 11px;
+  text-align: center;
+  background: var(--basic-background);
+  color: var(--basic-black);
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 3px solid var(--basic-background-header);
+  padding: 17px 20px;
+}
 .gallery-next {
   padding: 17px 77px 15px 78px;
   box-sizing: border-box;
