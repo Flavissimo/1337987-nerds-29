@@ -796,40 +796,11 @@ CATALOG*/
 }
 
 /*RANGE*/
-.block-for-range {
-  position: relative;
-  margin-top: 48px;
-  width: 260px;
-  height: 80px;
-  background-color: var(--basic-background-header);
-  border-radius: 3px;
-  padding: 1px;
-  display: flex;
+.block-for-range{
+
 }
 
-.aside-form {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-.filter legend {
-  font-family: 'RobotoBold';
-  font-size: 18px;
-  line-height: 30px;
-  text-transform: uppercase;
-  text-align: left;
-}
-.range-controls .scale{
-  width: 57px;
-  height: 2px;
-  margin-top: 38px;
-  margin-right: 21px;
-  background-color: var(--range-grey);
-}
-
-
-/*.round-for-range-left {
+.round-for-range-left {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -898,7 +869,7 @@ input[type=text] {
   text-align: center;
   margin-left: 12px;
 }
-*/
+
 /*RADIO*/
 /*Спрятали input*/
 .input-radio {
