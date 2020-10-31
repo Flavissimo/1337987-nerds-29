@@ -766,23 +766,22 @@ CATALOG*/
 /*боковая форма*/
 .main-header-catalog {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: min-content min-content;
   background-color: var(--basic-background-header);
 }
 
 .menu-title {
-  display: grid;
-  align-items: flex-start;
-  justify-content: center;
+  text-align: center;
 }
 
-/*СПРОСИТЬ!!! Явно под "Магазин готовых шаблонов" bottom больше, как правильно задать в grid этот отступ? */
+/*в normalizeCSS у h1 автоматический margin -УБРАЛА!*/
 .menu-title-magazin {
   font-family: 'RobotoMedium';
   color: var(--basic-black);
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  padding: 72px 0 106px 0;
 }
 
 .wrapper-catalog {
