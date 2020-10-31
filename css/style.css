@@ -802,12 +802,22 @@ CATALOG*/
   margin: 0;
 }
 
-.filter legend {
+.top-text-range {
   font-family: 'RobotoBold';
   font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   text-align: left;
+}
+
+.filter legend {
+  margin-top: 54px;
+  font-family: 'RobotoBold';
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  margin-bottom: 13px;
 }
 
 .block-for-range {
@@ -819,8 +829,10 @@ CATALOG*/
   border-radius: 3px;
   padding: 1px;
   display: flex;
+  box-sizing: border-box;
 }
 
+/*КРУГИ*/
 .round-for-range-left {
   position: absolute;
   width: 20px;
@@ -843,12 +855,6 @@ CATALOG*/
   cursor: pointer;
 }
 
-.range-green {
-  width: 138px;
-  height: 2px;
-  margin: 38px 0;
-}
-
 .round-for-range-right {
   position: absolute;
   width: 20px;
@@ -857,18 +863,25 @@ CATALOG*/
   border: 1px solid #ABABAB;
   background-color: #FFFFFF;
   margin-top: 29px;
-  margin-left: 130px;
+  margin-left: 171px;
   cursor: pointer;
 }
 
+/*ШКАЛА*/
+.range-green {
+  width: 138px;
+  height: 2px;
+  margin: 38px 0 38px 33px;
+}
 
 .range-grey {
   width: 57px;
   height: 2px;
   margin-top: 38px;
-  margin-right: 21px;
+  margin-right: 22px;
 }
 
+/*ШКАЛА С ЧИСЛАМИ*/
 .list-flex-aside {
   display: flex;
   flex-direction: row;
@@ -879,6 +892,14 @@ CATALOG*/
   align-items: center;
   list-style: none;
   width: 260px;
+}
+
+.aside-text {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  text-align: left;
 }
 
 input[type=text] {
