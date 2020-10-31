@@ -588,6 +588,7 @@ img {
   height:52px;
   text-align: center;
 }
+/*!!!СПРОСИТЬ!!КАК УБРАТЬ ПЕРВЫЙ content у первого блока??!*/
 .no-decor{
   content:" ";
   background-color:var(--basic-background);
