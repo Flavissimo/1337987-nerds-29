@@ -1271,6 +1271,7 @@ input[type=submit]:active {
   margin-bottom: 32px;
 }
 
+/*КНОПКА С ЦЕНОЙ*/
 .price-button {
   font-family: 'RobotoMedium';
   font-weight: 500;
@@ -1281,6 +1282,11 @@ input[type=submit]:active {
   background-color: var(--long-dash);
   border-radius: 3px;
   border: none;
+}
+
+.rub::before {
+  content: "\20BD";
+  font-size: 1.2em;
 }
 
 .price-button:hover {
