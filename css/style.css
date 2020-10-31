@@ -61,6 +61,7 @@
   --triangle-color: #231F20;
   --triangle-hover: #A6A6A6;
   --border-for-pagination: #DBDBDB;
+  --round-for-circle: #C1C1C1;
 }
 
 *, *::before, *::after {
@@ -204,10 +205,28 @@ img {
   padding-bottom: 10px;
 }
 
+/*СЛАЙДЕР*/
 .main-header-representation {
   display: grid;
   grid-template-columns: 400px 760px;
   position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/*ПЕРВЫЙ БЛОК С ТЕКСТОМ*/
+.slider {
+  display: block;
+  position: relative;
+  text-align: left;
+  margin-top: 78px;
+  box-sizing: border-box;
+}
+
+.slider-list, .slider-list-img {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .main-header-top {
@@ -215,20 +234,40 @@ img {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  margin: 0;
 }
 
-/*СЛАЙДЕР!*/
-.main-header-about {
-  border: 1px solid red;
-  /*ДЛЯ ПОНИМАНИЯ*/
-  display: block;
-  margin-top: 78px;
+.main-header-text {
+  font-family: 'Roboto';
+  color: var(--black-text);
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 38px;
+  margin-top: 25px;
 }
 
+/*СЛАЙДЕР КАРТИНКА*/
+.slider-img {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+.slider-item-img{
+  padding: 0;
+  margin: 0;
+  width:760px;
+  height:431px;
+  display: flex;
+}
+
+
+/*ПРЯЧЕМ КНОПКИ*/
 .slide {
   display: none;
 }
 
+/*ПОКАЗАТЬ БЛОК*/
 .slide-current {
   display: block;
 }
@@ -236,7 +275,7 @@ img {
 /*КНОПКИ*/
 .slider-controls {
   position: absolute;
-  top: 431px;
+  top: 317px;
   right: 533px;
   z-index: 20;
   display: flex;
@@ -251,26 +290,18 @@ img {
   background-color: var(--basic-background);
   border-radius: 50%;
   cursor: pointer;
+  border: none;
 }
 
-.slider-controls .current {
-  background-color: red;/КАК ПРИМЕР/
+/*ДЛЯ КНОПОК*/
+ .current {
+  background-image: url("../img/ellipse 8.svg");
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.main-header-text {
-  font-family: 'Roboto';
-  color: var(--black-text);
-  font-size: 16px;
-  line-height: 24px;
-  margin-bottom: 38px;
-}
-
-.main-header-slide {
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
+/*КНОПКА СЛАЙДЕРА*/
 .main-header-btn {
   border-radius: 3px;
   color: var(--basic-white);
@@ -454,23 +485,22 @@ img {
 .list-advantages {
   list-style: none;
   position: relative;
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
 }
-
 
 .item-advantages::before {
   content: " ";
   margin-right: 7px;
   background-image: url("../img/Rectangle.svg");
-  width:25px;
-  height:2px;
+  width: 25px;
+  height: 2px;
   display: inline-block;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
 
 .item-advantages {
-  position:relative;
+  position: relative;
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 24px;
@@ -478,6 +508,7 @@ img {
   margin-bottom: 20px;
   display: block;
 }
+
 .item-advantages:last-child {
   margin-bottom: 73px;
 }
@@ -1100,7 +1131,7 @@ input[type=submit]:active {
 }
 
 .scroll-triangle-right:hover {
-opacity:60%;
+  opacity: 60%;
 }
 
 .scroll-triangle-left:active {
@@ -1263,7 +1294,8 @@ opacity:60%;
   box-sizing: border-box;
   padding: 17px 20px;
 }
-.gallery-page:first-child{
+
+.gallery-page:first-child {
   margin-right: 11px;
   text-align: center;
   background: var(--basic-background);
@@ -1273,6 +1305,7 @@ opacity:60%;
   border: 3px solid var(--basic-background-header);
   padding: 17px 20px;
 }
+
 .gallery-next {
   padding: 17px 77px 15px 78px;
   box-sizing: border-box;
