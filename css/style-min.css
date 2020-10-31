@@ -5,7 +5,8 @@ Source .foo {
 .bar {
   color: rgba(255, 0, 0, 1);
 }
- @font-face {
+
+@font-face {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -230,7 +231,8 @@ img {
   line-height: 24px;
   margin-bottom: 38px;
   margin-top: 25px;
-  hyphens: auto
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 .slider-img {
@@ -503,7 +505,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom:74px;
+  margin-bottom: 74px;
 }
 
 .block-statistic {
@@ -880,7 +882,7 @@ input[type=text] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  position: absolute
+  position: absolute;
 }
 
 .radio {
@@ -930,11 +932,11 @@ input[type=text] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  position: absolute
+  position: absolute;
 }
 
 .check {
-  padding-left: 2em
+  padding-left: 2em;
 }
 
 .check-box {
@@ -944,7 +946,7 @@ input[type=text] {
   background-image: url(../img/checkbox-off.svg);
   margin-left: -2em;
   margin-top: -.2em;
-  opacity: .3
+  opacity: .3;
 }
 
 .check-input:checked+.check-box {
