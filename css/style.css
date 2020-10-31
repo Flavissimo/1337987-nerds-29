@@ -222,6 +222,7 @@ img {
   text-align: left;
   margin-top: 78px;
   box-sizing: border-box;
+  width: 400px;
 }
 
 .slider-list, .slider-list-img {
@@ -245,7 +246,7 @@ img {
   line-height: 24px;
   margin-bottom: 38px;
   margin-top: 25px;
-  hyphens:auto;
+  hyphens: auto;
 }
 
 /*СЛАЙДЕР КАРТИНКА*/
@@ -571,14 +572,25 @@ img {
   border-bottom: 2px solid var(--basic-background-header);
 }
 
-/*СПРОСИТЬ! Бордеры на макете одинаковые, а у меня зависят от контента...Что не так?*/
-.link-partners {
-  margin-left: 45px;
-  border-left: 2px solid #EEEEEE;
-}
 
-.link-partners:first-child {
-  border-left: none;
+.link-partners {
+  display:flex;
+    align-items: center;
+  position:relative;
+  margin-left: 50px;
+  box-sizing: border-box;
+}
+.link-partners::before{
+  content:" ";
+  position:absolute;
+  background-image: url("../img/rec-partners.svg");
+  width:2px;
+  height:52px;
+  text-align: center;
+}
+.no-decor{
+  content:" ";
+  background-color:var(--basic-background);
 }
 
 .img-partners {
