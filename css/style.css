@@ -795,9 +795,30 @@ CATALOG*/
   margin-top: 55px;
 }
 
-/*RANGE*/
-.block-for-range{
+/*!!!!RANGE!!!!*/
+.aside-form {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
 
+.filter legend {
+  font-family: 'RobotoBold';
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.block-for-range {
+  position: relative;
+  margin-top: 48px;
+  width: 260px;
+  height: 80px;
+  background-color: var(--basic-background-header);
+  border-radius: 3px;
+  padding: 1px;
+  display: flex;
 }
 
 .round-for-range-left {
@@ -807,7 +828,7 @@ CATALOG*/
   border-radius: 50%;
   border: 1px solid #ABABAB;
   background-color: #FFFFFF;
-  margin-left: 17px;
+  margin-left: 18px;
   margin-top: 29px;
   cursor: pointer;
 }
@@ -836,8 +857,10 @@ CATALOG*/
   border: 1px solid #ABABAB;
   background-color: #FFFFFF;
   margin-top: 29px;
+  margin-left: 130px;
   cursor: pointer;
 }
+
 
 .range-grey {
   width: 57px;
@@ -845,8 +868,6 @@ CATALOG*/
   margin-top: 38px;
   margin-right: 21px;
 }
-
-
 
 .list-flex-aside {
   display: flex;
