@@ -502,7 +502,8 @@ img {
 .wrapper-for-flex {
   display: flex;
   flex-direction: row;
-  align-items: center
+  align-items: center;
+  margin-bottom:74px;
 }
 
 .block-statistic {
