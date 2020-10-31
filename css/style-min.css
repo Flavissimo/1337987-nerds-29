@@ -1104,7 +1104,7 @@ input[type=submit]:active {
   border-top-right-radius: 5px
 }
 
-.block-with-dots:hover {
+.block:hover .block-with-dots {
   background-color: var(--gallery-back);
   opacity: 100%
 }
