@@ -30,3 +30,4 @@ ymaps.ready(function() {
     myMap.geoObjects
     .add(myPlacemark)
 });
+//Еще в разработке
