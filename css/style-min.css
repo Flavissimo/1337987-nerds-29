@@ -1260,6 +1260,26 @@ img {
 }
 
 /*POPAP*/
+/*САМА ФОРМА_ПОЗИЦИОНИРОВАНИЕ*/
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: none;
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-login {
   width: 960px;
   height: 590px;
@@ -1268,7 +1288,8 @@ img {
   box-shadow: 0 14px 14px 14px rgba(0, 0, 0, .22), 0 10px 10px rgba(0, 0, 0, .25);
 }
 
-.madal-heading {
+.modal-heading {
+  position: relative;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -1278,11 +1299,17 @@ img {
 
 /*иконка для закрытия*/
 .close-cross {
+  position: absolute;
   width: 21px;
   height: 21px;
   background-image: url("../img/close-cross.svg");
-  margin-left: 438px;
+  right: -20px;
   opacity: .3;
+  cursor: pointer;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--basic-background);
 }
 
 .close-cross:hover {
@@ -1300,6 +1327,25 @@ img {
   color: var(--basic-black);
 }
 
+/*
+.close-cross::before,
+.close-cross::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: var(--basic-dark);
+}
+
+.close-cross::before {
+  transform: rotate(45deg);
+}
+
+.close-cross::after {
+  transform: rotate(-45deg);
+}*/
 /*ФОРМЫ ЗАПОЛНЕНИЯ*/
 .login-form {
   margin: 0 100px;
@@ -1355,7 +1401,7 @@ img {
   text-align: left;
 }
 
-.login-icon-user {
+.login-mail-user {
   font-family: 'Roboto';
   font-size: 16px;
   line-height: 18px;
@@ -1377,16 +1423,16 @@ img {
   border-radius: 3px;
 }
 
-.login-icon-name:hover, .login-icon-user:hover, .login-textarea:hover {
+.login-icon-name:hover, .login-mail-user:hover, .login-textarea:hover {
   border: 2px solid var(--hover-modal-input);
 }
 
-.login-icon-name:focus, .login-icon-user:focus, .login-textarea:focus {
+.login-icon-name:focus, .login-mail-user:focus, .login-textarea:focus {
   border: 2px solid var(--basic-black);
   color: var(--basic-black);
 }
 
-.login-icon-name:invalid, .login-icon-user:invalid, .login-textarea:invalid {
+.login-icon-name:invalid, .login-mail-user:invalid, .login-textarea:invalid {
   border: 2px solid var(--invalid-modal-input);
   color: var(--invalid-modal-input);
 }
@@ -1414,6 +1460,49 @@ img {
 .modal-submit:active {
   background-color: var(--active-orange-btn);
   opacity: .3;
+}
+
+/* Animations для ПОПАП */
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Animations для ошибок */
+@keyframes shake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 /*Show transformations
