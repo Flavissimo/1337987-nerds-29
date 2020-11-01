@@ -171,6 +171,28 @@
       <p>Скидка&nbsp;10% для друзей из&nbsp;социальных сетей.</p>
     </section>
   </footer>
+  <!--POPAP ВСПЛЫВАЮЩЕЕ ОКНО-->
+  <div class="modal modal-login">
+    <section class="madal-heading">
+    <h2>Напишите нам</h2>
+<span class="close-cross"></span>
+</section>
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <p class="appointment-item">
+      <label class="appointment visually-hidden" for="username">Ваше имя:</label>
+      <input class="login-icon-name" id="username" type="text" name="login-name" placeholder="Имя Фамилия">
+    </p>
+    <p class="appointment-item">
+      <label class="appointment visually-hidden" for="login-login">Ваш E-mail:</label>
+      <input class="login-icon-user" id="login-login" type="email" name="login" placeholder="email@example.com">
+    </p>
+      <p class="appointment-item-text">
+        <label class="appointment visually-hidden" for="login-text">Текст письма:</label>
+   <textarea class="login-textarea" id="login-text" name="comment" cols="80" rows="5" placeholder="В свободной форме"></textarea>
+   </p>
+    </form>
+    <button class="modal-submit" type="submit">Отправить</button>
+  </div>
 
 </body>
 

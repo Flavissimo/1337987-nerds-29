@@ -869,7 +869,7 @@ img {
   text-align: left
 }
 
-input[type=text] {
+.filter-input-text {
   width: 80px;
   height: 38px;
   border: 0;
@@ -979,7 +979,7 @@ input[type=text] {
   opacity: 100%
 }
 
-input[type=submit], input[type=submit]:active, input[type=submit]:hover {
+.filter-submit, .filter-submit:active, .filter-submit:hover {
   width: 260px;
   height: 50px;
   border: 0;
@@ -988,7 +988,7 @@ input[type=submit], input[type=submit]:active, input[type=submit]:hover {
   text-align: center
 }
 
-input[type=submit] {
+.filter-submit {
   font-family: 'RobotoMedium';
   font-weight: 500;
   font-size: 16px;
@@ -998,11 +998,11 @@ input[type=submit] {
   cursor: pointer
 }
 
-input[type=submit]:active, input[type=submit]:hover {
+.filter-submit:active, .filter-submit:hover {
   background-color: var(--hover-grey-field)
 }
 
-input[type=submit]:active {
+.filter-submit:active {
   background-color: var(--active-grey-field);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1)
 }
@@ -1251,6 +1251,136 @@ input[type=submit]:active {
 .gallery-next:active, .gallery-page:active {
   background: var(--active-grey-field);
   box-shadow: inset 0 3px 0 rgba(0, 1, 1, .1)
+}
+
+/*POPAP*/
+.modal-login {
+  width: 960px;
+  height: 590px;
+  margin: auto;
+  background-color: var(--basic-background);
+  box-shadow: 0 14px 14px 14px rgba(0, 0, 0, .22), 0 10px 10px rgba(0, 0, 0, .25);
+}
+
+.madal-heading {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 63px 90px 37px 100px;
+  padding: 0;
+}
+
+/*иконка для закрытия*/
+.close-cross {
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/close-cross.svg");
+  margin-left: 438px;
+  opacity: .3;
+}
+
+.close-cross:hover {
+  opacity: 1;
+}
+
+.close-cross:active {
+  opacity: .2;
+}
+
+.modal-login h2 {
+  font-family: 'RobotoBold';
+  font-size: 45px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+/*ФОРМЫ ЗАПОЛНЕНИЯ*/
+.login-form {
+  margin: 0 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  width:761px;
+  box-sizing: border-box;
+}
+
+.appointment-item {
+  font-family: 'RobotoBold';
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  width: 360px;
+  margin-bottom: 34px;
+}
+
+.appointment-item input {
+  width: 360px;
+  height: 50px;
+  margin: 0;
+  border: 2px solid var(--range-grey);
+  background-color: var(--basic-background);
+  border-radius: 3px;
+}
+
+.appointment-item-text {
+  font-family: 'RobotoBold';
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  width: 760px;
+  margin-bottom: 47px;
+
+}
+
+.appointment {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 9px;
+  padding: 0;
+}
+
+/*инпуты*/
+.login-icon-name {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--footer-text);
+  padding-left: 16px;
+  text-align: left;
+}
+.login-icon-user {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--footer-text);
+  padding-left: 16px;
+  text-align: left;
+}
+
+.login-textarea {
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--footer-text);
+  padding-left: 16px;
+  padding-top:16px;
+  text-align: left;
+  border:2px solid var(--range-grey);
+  background-color: var(--basic-background);
+  border-radius: 3px;
+}
+/*кнопка*/
+.modal-submit{
+  width:259px;
+  height:50px;
+  text-align: center;
+  background-color: var(--long-dash);
+  color: var(--basic-background);
+  cursor: pointer;
+  border: 0;
+  border-radius: 3px;
+  margin-left: 100px;
 }
 
 /*Show transformations
