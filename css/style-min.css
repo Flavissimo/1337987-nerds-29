@@ -551,7 +551,7 @@ img {
     height: 52px;
     text-align: center
 }
-/*!!!СПРОСИТЬ!!КАК УБРАТЬ ПЕРВЫЙ content у первого блока??!*/
+
 .no-decor {
     content: " ";
     background-color: var(--basic-background)
@@ -759,7 +759,7 @@ img {
 .aside-bar {
     margin-top: 55px
 }
-/*!!!!RANGE!!!!*/
+
 .aside-form {
     border: 0;
     padding: 0;
@@ -967,7 +967,7 @@ img {
 .check-input:disabled+.check-box {
     opacity: .1
 }
-/*!!!! КАК ПРИМЕНИТЬ OPACITY к label в последних двух позициях*/
+
 @-webkit-keyframes bounce {
     0% {
         transform: translateY(-2000px)
@@ -1485,3 +1485,8 @@ img {
     background-color: var(--active-orange-btn);
     opacity: .3
 }
+
+/*Original:   27328 bytes
+Compressed: 22164 bytes (81.10%)
+Saving:     5164 bytes (18.90%)
+Time:       79 ms*/
