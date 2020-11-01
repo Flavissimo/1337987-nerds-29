@@ -595,12 +595,6 @@ img {
   background-position: center
 }
 
-.map {
-  width: 100%;
-  height: inherit;
-  box-sizing: border-box;
-  background-color: var(--basic-background-header)
-}
 
 .map-dot {
   width: 231px;
