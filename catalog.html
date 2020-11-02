@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>HTML Academy:Catalog</title>
+  <title>HTML Academy:Страница магазина</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style-min.css">
 </head>
@@ -15,7 +15,7 @@
     <div class="container">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-          <img src="img/nerds-logo.svg" alt="Logo" class="logo">
+          <img src="img/nerds-logo.svg" alt="Logo-Nerds" class="logo">
         </a>
         <ul class="site-navigation">
           <li class="list-navigation"><a class="link-navigation" href="index.html">Студия</a></li>
@@ -39,7 +39,7 @@
   <!--Блок формы выбора-->
   <div class="wrapper-catalog container">
     <aside class="aside-bar">
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
+      <form class="filter" method="get" target="_blank" action="https://echo.htmlacademy.ru/">
         <fieldset class="aside-form">
           <p class="top-text-range">Стоимость:</p>
           <div class="block-for-range">
@@ -66,7 +66,7 @@
           <legend>Сетка:</legend>
           <label for="rad1" class="radio option"> <input class="input-radio" type="radio" name="grid" value="rad1" id="rad1" checked><span class="radio-box"></span> Адаптивная</label>
           <label for="rad2" class="radio option"><input class="input-radio" type="radio" name="grid" value="rad2" id="rad2"><span class="radio-box"> </span>Фиксированная</label>
-          <label for="rad3" class="radio option"> <input class="input-radio" type="radio" name="grid" value="rad3" id="rad3" disabled><span class="radio-box"></span> Резиновая</label>
+          <label for="rad3" class="radio option"> <input class="input-radio" type="radio" name="grid" value="rad3" id="rad3"><span class="radio-box"></span> Резиновая</label>
         </fieldset>
         <fieldset class="aside-form">
           <legend>Особенности:</legend>
@@ -101,11 +101,11 @@
       <div class="main-block">
         <div class="block">
           <div class="block-with-dots">
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a><br>
+            <div href="#" class="gallery-path"></div>
+            <div href="#" class="gallery-path"></div>
+            <div href="#" class="gallery-path"></div><br>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-sedona.png" alt="sedona-site" class="gallery-img" width="358" height="578">
+          <div class="gallery-img-wrapper"> <img src="img/img-sedona.png" alt="Sedona-site" class="gallery-img" width="358" height="578">
             <div class="popap-block">
               <section class="popap-gallery">
                 <h3>Sedona</h3>
@@ -121,7 +121,7 @@
             <a href="#" class="gallery-path"></a>
             <a href="#" class="gallery-path"></a>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-pink.png" alt="pink-site" class="gallery-img" width="358" height="578">
+          <div class="gallery-img-wrapper"> <img src="img/img-pink.png" alt="Pink-site" class="gallery-img" width="358" height="578">
             <div class="popap-block">
               <section class="popap-gallery">
                 <h3>Pink App</h3>
@@ -137,7 +137,7 @@
             <a href="#" class="gallery-path"></a>
             <a href="#" class="gallery-path"></a>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-barbershop.png" alt="gallery" class="gallery-img" width="358" height="578">
+          <div class="gallery-img-wrapper"> <img src="img/img-barbershop.png" alt="Barbershop-site" class="gallery-img" width="358" height="578">
             <div class="popap-block">
               <section class="popap-gallery">
                 <h3>Barbershop</h3>
@@ -153,7 +153,7 @@
             <a href="#" class="gallery-path"></a>
             <a href="#" class="gallery-path"></a>
           </div>
-          <div class="gallery-img-wrapper"><img src="img/img-mishka.png" alt="gallery" class="gallery-img" width="358" height="578">
+          <div class="gallery-img-wrapper"><img src="img/img-mishka.png" alt="Mishka-site" class="gallery-img" width="358" height="578">
             <div class="popap-block">
               <section class="popap-gallery">
                 <h3>Mishka</h3>
@@ -169,7 +169,7 @@
             <a href="#" class="gallery-path"></a>
             <a href="#" class="gallery-path"></a>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-aplus.png" alt="gallery" class="gallery-img" width="358" height="578">
+          <div class="gallery-img-wrapper"> <img src="img/img-aplus.png" alt="A-plus-site" class="gallery-img" width="358" height="578">
             <div class="popap-block">
               <section class="popap-gallery">
                 <h3>A plus</h3>
@@ -185,7 +185,7 @@
             <a href="#" class="gallery-path"></a>
             <a href="#" class="gallery-path"></a>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-kvast.png" alt="gallery" class="gallery-img" width="358" height="578">
+          <div class="gallery-img-wrapper"> <img src="img/img-kvast.png" alt="Kvast-site" class="gallery-img" width="358" height="578">
             <div class="popap-block">
               <section class="popap-gallery">
                 <h3>Кваст</h3>
@@ -228,9 +228,9 @@
   <footer class="main-footer container">
     <div class="footer-social">
       <ul class="list-footer">
-        <li class="item-footer"><a class="link-footer" href="#"><img src="img/vk-icon.svg" alt="social-icon" class="social-vk"></a></li>
-        <li class="item-footer"><a class="link-footer" href="#"><img src="img/fb-icon.svg" alt="social-icon" class="social-fb"></a></li>
-        <li class="item-footer"><a class="link-footer" href="#"><img src="img/insta-icon.svg" alt="social-icon" class="social-inst"></a></li>
+        <li class="item-footer"><a class="link-footer" href="#"><img src="img/vk-icon.svg" alt="Vkontakte" class="social-vk"></a></li>
+        <li class="item-footer"><a class="link-footer" href="#"><img src="img/fb-icon.svg" alt="Facebook" class="social-fb"></a></li>
+        <li class="item-footer"><a class="link-footer" href="#"><img src="img/insta-icon.svg" alt="Instagram" class="social-inst"></a></li>
       </ul>
     </div>
     <section class="footer-text">
@@ -246,15 +246,15 @@
     </section>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="appointment-item">
-        <label class="appointment visually-hidden" for="username">Ваше имя:</label>
+        <label class="appointment" for="username">Ваше имя:</label>
         <input class="login-icon-name" id="username" type="text" name="login-name" placeholder="Имя Фамилия">
       </p>
       <p class="appointment-item">
-        <label class="appointment visually-hidden" for="login-login">Ваш E-mail:</label>
+        <label class="appointment" for="login-login">Ваш E-mail:</label>
         <input class="login-mail-user" id="login-login" type="email" name="login-email" placeholder="email@example.com">
       </p>
       <p class="appointment-item-text">
-        <label class="appointment visually-hidden" for="login-text">Текст письма:</label>
+        <label class="appointment" for="login-text">Текст письма:</label>
         <textarea class="login-textarea" id="login-text" name="comment" cols="80" rows="5" placeholder="В свободной форме"></textarea>
       </p>
       <button class="modal-submit" type="submit">Отправить</button>
