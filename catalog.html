@@ -15,17 +15,17 @@
     <div class="container">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-          <img src="img/nerds-logo.svg" alt="Logo-Nerds" class="logo">
+          <img src="img/nerds-logo.svg" alt="Logo-Nerds-Black" class="logo">
         </a>
         <ul class="site-navigation">
-          <li class="list-navigation"><a class="link-navigation" href="index.html">Студия</a></li>
-          <li class="list-navigation"><a class="link-navigation" href="#">Клиенты</a></li>
-          <li class="list-navigation"><a class="link-navigation" href="catalog.html">Магазин</a></li>
-          <li class="list-navigation"><a class="link-navigation" href="#">Контакты</a></li>
+          <li class="list-navigation"><a class="link-navigation" title="Студия" href="index.html">Студия</a></li>
+          <li class="list-navigation"><a class="link-navigation" title="Клиенты" href="#">Клиенты</a></li>
+          <li class="list-navigation"><a class="link-navigation" title="Магазин" href="catalog.html">Магазин</a></li>
+          <li class="list-navigation"><a class="link-navigation" title="Контакты" href="#">Контакты</a></li>
         </ul>
         <div class="right-navigation">
           <div class="cart-div">
-            <a href="#" class="cart">Корзина</a>
+            <a href="#" class="cart" title="Корзина">Корзина</a>
           </div>
         </div>
       </nav>
@@ -64,7 +64,7 @@
 
         <fieldset class="aside-form">
           <legend>Сетка:</legend>
-          <label for="rad1" class="radio option"> <input class="input-radio" type="radio" name="grid" value="rad1" id="rad1" checked><span class="radio-box"></span> Адаптивная</label>
+          <label for="rad1" class="radio option"> <input class="input-radio" type="radio" name="grid" value="rad1" id="rad1"><span class="radio-box"></span> Адаптивная</label>
           <label for="rad2" class="radio option"><input class="input-radio" type="radio" name="grid" value="rad2" id="rad2"><span class="radio-box"> </span>Фиксированная</label>
           <label for="rad3" class="radio option"> <input class="input-radio" type="radio" name="grid" value="rad3" id="rad3"><span class="radio-box"></span> Резиновая</label>
         </fieldset>
@@ -90,108 +90,108 @@
       <div class="main-sort">
         <h3 class="main-top-sort">СОРТИРОВАТЬ:</h3>
         <ul class="menu-sort">
-          <li class="menu-item-sort"><a href="#" class="menu-link-sort">По цене</a></li>
-          <li class="menu-item-sort"><a href="#" class="menu-link-sort">По типу</a></li>
-          <li class="menu-item-sort"><a href="#" class="menu-link-sort">По названию</a></li>
+          <li class="menu-item-sort"><a href="#" class="menu-link-sort" title="Сортировать по цене">По цене</a></li>
+          <li class="menu-item-sort"><a href="#" class="menu-link-sort" title="Сортировать по типу">По типу</a></li>
+          <li class="menu-item-sort"><a href="#" class="menu-link-sort" title="Сортировать по названию">По названию</a></li>
         </ul>
-        <div class="scroll-triangle-left"></div>
-        <div class="scroll-triangle-right"></div>
+        <div class="scroll-triangle-left" tabindex="0"></div>
+        <div class="scroll-triangle-right" tabindex="0"></div>
       </div>
       <!--Основной контент-галерея-->
       <div class="main-block">
-        <div class="block">
-          <div class="block-with-dots">
-            <div href="#" class="gallery-path"></div>
-            <div href="#" class="gallery-path"></div>
-            <div href="#" class="gallery-path"></div><br>
+        <div class="block" tabindex="0">
+          <div class="block-with-dots" tabindex="0">
+            <div class="gallery-path" tabindex="-1"></div><!--Сделала не кликабельными, так как не интерактивные элементы в этом проекте. -->
+            <div class="gallery-path" tabindex="-1"></div>
+            <div class="gallery-path" tabindex="-1"></div>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-sedona.png" alt="Sedona-site" class="gallery-img" width="358" height="578">
-            <div class="popap-block">
-              <section class="popap-gallery">
-                <h3>Sedona</h3>
+          <div class="gallery-img-wrapper"> <img src="img/img-sedona.png" alt="Sedona-site" class="gallery-img" width="358" height="578" tabindex="-1">
+            <div class="popap-block" tabindex="0">
+              <div class="popap-gallery">
+                <a href="#" target="_blank" title="Подробнее о проекте Седона" class="popap-title-for-price">Sedona</a>
                 <p>Информационный сайт для туристов</p>
-                <a href="#" class="price-button">9&nbsp;900 &nbsp;<span class="rub"></span></a>
-              </section>
+                <a href="#" class="price-button" title="Цена за услугу сайта Седона">9&nbsp;900 &nbsp;<span class="rub"></span></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="block">
-          <div class="block-with-dots">
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
+        <div class="block" tabindex="0">
+          <div class="block-with-dots" tabindex="0">
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-pink.png" alt="Pink-site" class="gallery-img" width="358" height="578">
-            <div class="popap-block">
-              <section class="popap-gallery">
-                <h3>Pink App</h3>
+          <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-pink.png" alt="Pink-site" class="gallery-img" width="358" height="578" tabindex="-1">
+            <div class="popap-block" tabindex="0">
+              <div class="popap-gallery">
+                <a href="#" target="_blank" title="Подробнее о проекте Пинк" class="popap-title-for-price">Pink App</a>
                 <p>Продуктовый лендинг приложения для iOS и&nbsp;Android</p>
-                <a href="#" class="price-button">9&nbsp;900&nbsp;<span class="rub"></span></a>
-              </section>
+                <a href="#" class="price-button" title="Цена за услугу сайта Пинк">9&nbsp;900&nbsp;<span class="rub"></span></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="block">
-          <div class="block-with-dots">
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
+        <div class="block" tabindex="0">
+          <div class="block-with-dots" tabindex="0">
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-barbershop.png" alt="Barbershop-site" class="gallery-img" width="358" height="578">
-            <div class="popap-block">
-              <section class="popap-gallery">
-                <h3>Barbershop</h3>
+          <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-barbershop.png" alt="Barbershop-site" class="gallery-img" width="358" height="578" tabindex="-1">
+            <div class="popap-block" tabindex="0">
+              <div class="popap-gallery">
+                <a href="#" target="_blank" title="Подробнее о проекте Барбершоп" class="popap-title-for-price">Barbershop</a>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
-                <a href="#" class="price-button">9&nbsp;900&nbsp;<span class="rub"></span></a>
-              </section>
+                <a href="#" class="price-button" title="Цена за услугу сайта Барбершоп">9&nbsp;900&nbsp;<span class="rub"></span></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="block">
-          <div class="block-with-dots">
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
+        <div class="block" tabindex="0">
+          <div class="block-with-dots" tabindex="0">
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
-          <div class="gallery-img-wrapper"><img src="img/img-mishka.png" alt="Mishka-site" class="gallery-img" width="358" height="578">
-            <div class="popap-block">
-              <section class="popap-gallery">
-                <h3>Mishka</h3>
+          <div class="gallery-img-wrapper" tabindex="-1"><img src="img/img-mishka.png" alt="Mishka-site" class="gallery-img" width="358" height="578" tabindex="-1">
+            <div class="popap-block" tabindex="0">
+              <div class="popap-gallery">
+                <a href="#" target="_blank" title="Подробнее о проекте Мишка" class="popap-title-for-price">Mishka</a>
                 <p>Интернет&ndash;магазин вязаных игрушек</p>
-                <a href="#" class="price-button">9&nbsp;900&nbsp;<span class="rub"></span></a>
-              </section>
+                <a href="#" class="price-button" title="Цена за услугу сайта Мишка">9&nbsp;900&nbsp;<span class="rub"></span></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="block">
-          <div class="block-with-dots">
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
+        <div class="block" tabindex="0">
+          <div class="block-with-dots" tabindex="0">
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-aplus.png" alt="A-plus-site" class="gallery-img" width="358" height="578">
-            <div class="popap-block">
-              <section class="popap-gallery">
-                <h3>A plus</h3>
+          <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-aplus.png" alt="A-plus-site" class="gallery-img" width="358" height="578" tabindex="-1">
+            <div class="popap-block" tabindex="0">
+              <div class="popap-gallery">
+                <a href="#" target="_blank" title="Подробнее о проекте А-Плюс" class="popap-title-for-price">A plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
-                <a href="#" class="price-button">9&nbsp;900&nbsp;<span class="rub"></span></a>
-              </section>
+                <a href="#" class="price-button" title="Цена за услугу сайта А-Плюс">9&nbsp;900&nbsp;<span class="rub"></span></a>
+              </div>
             </div>
           </div>
         </div>
-        <div class="block">
-          <div class="block-with-dots">
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
-            <a href="#" class="gallery-path"></a>
+        <div class="block" tabindex="0">
+          <div class="block-with-dots" tabindex="0">
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
+            <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
-          <div class="gallery-img-wrapper"> <img src="img/img-kvast.png" alt="Kvast-site" class="gallery-img" width="358" height="578">
-            <div class="popap-block">
-              <section class="popap-gallery">
-                <h3>Кваст</h3>
+          <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-kvast.png" alt="Kvast-site" class="gallery-img" width="358" height="578" tabindex="-1">
+            <div class="popap-block" tabindex="0">
+              <div class="popap-gallery">
+                <a href="#" target="_blank" title="Подробнее о проекте Кваст" class="popap-title-for-price">Кваст</a>
                 <p>Промо&ndash;сайт производителя крафтового кваса</p>
-                <a href="#" class="price-button">9&nbsp;900&nbsp;<span class="rub"></span></a>
-              </section>
+                <a href="#" class="price-button" title="Цена за услугу сайта Кваст">9&nbsp;900&nbsp;<span class="rub"></span></a>
+              </div>
             </div>
           </div>
         </div>
@@ -207,9 +207,9 @@
     </div>
   </div>
   <div class="contacts">
-    <div class="map" id="yandexmap" style="width: 100%; height: 416px">
+    <div class="map" id="map" style="width: 100%; height: 416px" tabindex="-1">
       <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9302fcecfc1c0058a278eff2620ba9ef8e24f1c0dcde50d93f9f817d68df895c&amp;source=constructor" width="100%" height="416" frameborder="0" allowfullscreen
-        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" tabindex="-1"></iframe>
     </div>
     <div class="container">
       <section class="block-info">
@@ -217,9 +217,9 @@
         <div class="contacts-info">
           <p class="text-contacts">191186, Санкт-Петербург,<br>
             ул. Б.&nbsp;Конюшенная, д. 19/8 </p>
-          <a href="tel:+78122757575" class="link-contacts">тел.&nbsp;+7(812) 275-75-75</a><br>
+          <a href="tel:+78122757575" class="link-contacts" tittle="Телефон компании" tabindex="-1">тел.&nbsp;+7(812) 275-75-75</a><br>
         </div>
-        <button class="button-contacts" type="button">Напишите нам</button>
+        <button class="button-contacts" type="button" aria-label="Напишите нам для обратной связи">Напишите нам</button>
       </section>
       <!--<div class="map-dot"></div> На Яндекс карте автоматом появляется указатель-->
     </div>
@@ -228,10 +228,9 @@
   <footer class="main-footer container">
     <div class="footer-social">
       <ul class="list-footer">
-        <li class="item-footer"><a class="link-footer" href="#"><img src="img/vk-icon.svg" alt="Vkontakte" class="social-vk"></a></li>
-        <li class="item-footer"><a class="link-footer" href="#"><img src="img/fb-icon.svg" alt="Facebook" class="social-fb"></a></li>
-        <li class="item-footer"><a class="link-footer" href="#"><img src="img/insta-icon.svg" alt="Instagram" class="social-inst"></a></li>
-      </ul>
+        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/vk-icon.svg" alt="Vkontakte" class="social-vk"></a></li>
+        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/fb-icon.svg" alt="Facebook" class="social-fb"></a></li>
+        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/insta-icon.svg" alt="Instagram" class="social-inst"></a></li>
     </div>
     <section class="footer-text">
       <h2>Давайте дружить, это выгодно!</h2>
@@ -242,22 +241,22 @@
   <div class="modal modal-login">
     <section class="modal-heading">
       <h2>Напишите нам</h2>
-      <button type="button" class="close-cross"></button>
+      <button type="button" class="close-cross" aria-label="Закрыть окно" tabindex="0"></button>
     </section>
     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="appointment-item">
-        <label class="appointment" for="username">Ваше имя:</label>
-        <input class="login-icon-name" id="username" type="text" name="login-name" placeholder="Имя Фамилия">
+        <label class="appointment " for="username">Ваше имя:</label>
+        <input class="login-icon-name" id="username" type="text" name="login-name" placeholder="Имя Фамилия" aria-required="true">
       </p>
       <p class="appointment-item">
-        <label class="appointment" for="login-login">Ваш E-mail:</label>
-        <input class="login-mail-user" id="login-login" type="email" name="login-email" placeholder="email@example.com">
+        <label class="appointment " for="login-login">Ваш E-mail:</label>
+        <input class="login-mail-user" id="login-login" type="email" name="login-email" placeholder="email@example.com" aria-required="true">
       </p>
       <p class="appointment-item-text">
-        <label class="appointment" for="login-text">Текст письма:</label>
+        <label class="appointment " for="login-text">Текст письма:</label>
         <textarea class="login-textarea" id="login-text" name="comment" cols="80" rows="5" placeholder="В свободной форме"></textarea>
       </p>
-      <button class="modal-submit" type="submit">Отправить</button>
+      <button class="modal-submit" aria-label="Отправить Ваши данные" type="submit">Отправить</button>
     </form>
   </div>
   <script src="js/login.js"></script>

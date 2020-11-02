@@ -1143,7 +1143,9 @@ img {
 .menu-link-sort, .menu-link-sort:active, .menu-link-sort:hover {
   color: var(--basic-black)
 }
-
+.menu-link-sort:focus {
+  opacity: 60%
+}
 .menu-link-sort:hover {
   opacity: 60%
 }
@@ -1163,7 +1165,9 @@ img {
 .scroll-triangle-right {
   background-image: url(../img/icon-up-dir.svg)
 }
-
+.scroll-triangle-left:focus, .scroll-triangle-right:focus {
+  opacity: 60%
+}
 .scroll-triangle-left:hover, .scroll-triangle-right:hover {
   opacity: 60%
 }
@@ -1187,7 +1191,11 @@ img {
   margin: 0;
   padding: 0
 }
-
+.block:focus{
+  box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px
+}
 .block:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
   border-bottom-left-radius: 5px;
@@ -1204,7 +1212,10 @@ img {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px
 }
-
+.block-with-dots:focus{
+  background-color: var(--gallery-back);
+  opacity: 100%
+}
 .block:hover .block-with-dots {
   background-color: var(--gallery-back);
   opacity: 100%
@@ -1252,6 +1263,17 @@ img {
   transform: translateY(100%);
   transition: transform .2s ease-out
 }
+.popap-block:focus {
+  justify-content: center;
+  background: var(--basic-background-header);
+  width: 100%;
+  height: 231px;
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  transform: translateY(100%);
+  transition: transform .2s ease-out
+}
 
 .gallery-img-wrapper:hover .popap-block {
   transform: translateY(0)
@@ -1263,13 +1285,14 @@ img {
   width: 255px
 }
 
-.popap-gallery h3 {
+.popap-title-for-price {
   font-family: 'RobotoBold';
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   color: var(--basic-black);
-  margin-bottom: 12px
+  margin-bottom: 12px;
+  text-decoration: none;
 }
 
 .popap-gallery p {
@@ -1300,6 +1323,9 @@ img {
   font-size: 1.2em
 }
 
+.price-button:focus{
+  background-color: var(--hover-orange-btn)
+}
 .price-button:hover {
   background-color: var(--hover-orange-btn)
 }
@@ -1343,6 +1369,9 @@ img {
   color: var(--basic-black);
   text-align: center;
   border-radius: 3px
+}
+.gallery-next:focus, .gallery-page:focus {
+  background: var(--hover-grey-field)
 }
 
 .gallery-next:hover, .gallery-page:hover {
