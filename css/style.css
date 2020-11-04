@@ -192,7 +192,7 @@ img {
 }
 .link-navigation.current-page {
   border-bottom: 2px solid var(--basic-orange);
-  padding-bottom: 10px
+  padding-bottom: 12px
 }
 .main-header-representation {
     display: grid;
