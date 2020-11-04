@@ -1,12 +1,12 @@
-const loginLink = document.querySelector(".button-contacts");
-const loginPopup = document.querySelector(".modal-login");
-const loginClose = loginPopup.querySelector(".close-cross");
-const loginForm = loginPopup.querySelector(".login-form");
-const loginLogin = loginPopup.querySelector(".login-icon-name");
-const loginEmail = loginPopup.querySelector(".login-mail-user");
+var loginLink = document.querySelector(".button-contacts");
+var loginPopup = document.querySelector(".modal-login");
+var loginClose = loginPopup.querySelector(".close-cross");
+var loginForm = loginPopup.querySelector(".login-form");
+var loginLogin = loginPopup.querySelector(".login-icon-name");
+var loginEmail = loginPopup.querySelector(".login-mail-user");
 
-let isStorageSupport = true;
-let storage = "";
+var isStorageSupport = true;
+var storage = "";
 
 try {
   storage = localStorage.getItem("login");
