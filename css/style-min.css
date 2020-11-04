@@ -482,7 +482,7 @@ img {
 .item-advantages::before {
   content: " ";
   margin-right: 7px;
-  background-image: url(../img/Rectangle.svg);
+  background-image: url(../img/rectangle.svg);
   width: 25px;
   height: 2px;
   display: inline-block;
