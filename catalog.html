@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>HTML Academy:Страница магазина</title>
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -15,7 +15,7 @@
     <div class="container">
       <nav class="main-navigation">
         <a href="index.html" class="main-header-logo">
-          <img src="img/nerds-logo.svg" alt="Logo-Nerds-Black" class="logo">
+          <img src="img/nerds-logo.svg" alt="Logo-Nerds-Black" width="160" height="66" class="logo">
         </a>
         <ul class="site-navigation">
           <li class="list-navigation"><a class="link-navigation" title="Студия" href="index.html">Студия</a></li>
@@ -24,9 +24,7 @@
           <li class="list-navigation"><a class="link-navigation" title="Контакты" href="#">Контакты</a></li>
         </ul>
         <div class="right-navigation">
-          <div class="cart-div">
             <a href="#" class="cart" title="Корзина">Корзина</a>
-          </div>
         </div>
       </nav>
     </div>
@@ -101,15 +99,16 @@
       <div class="main-block">
         <div class="block" tabindex="0">
           <div class="block-with-dots" tabindex="0">
-            <div class="gallery-path" tabindex="-1"></div><!--Сделала не кликабельными, так как не интерактивные элементы в этом проекте. -->
+            <div class="gallery-path" tabindex="-1"></div>
+            <!--Сделала не кликабельными, так как не интерактивные элементы в этом проекте. -->
             <div class="gallery-path" tabindex="-1"></div>
             <div class="gallery-path" tabindex="-1"></div>
           </div>
           <div class="gallery-img-wrapper"> <img src="img/img-sedona.png" alt="Sedona-site" class="gallery-img" width="358" height="578" tabindex="-1">
-            <div class="popap-block" tabindex="0">
-              <div class="popap-gallery">
+            <div class="popup-block" tabindex="0">
+              <div class="popup-gallery">
                 <a href="#" target="_blank" title="Подробнее о проекте Седона" class="popap-title-for-price">Sedona</a>
-                <p>Информационный сайт для туристов</p>
+                <p>Информационный сайт для&nbsp;туристов</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Седона">9&nbsp;900 &nbsp;<span class="rub"></span></a>
               </div>
             </div>
@@ -122,8 +121,8 @@
             <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
           <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-pink.png" alt="Pink-site" class="gallery-img" width="358" height="578" tabindex="-1">
-            <div class="popap-block" tabindex="0">
-              <div class="popap-gallery">
+            <div class="popup-block" tabindex="0">
+              <div class="popup-gallery">
                 <a href="#" target="_blank" title="Подробнее о проекте Пинк" class="popap-title-for-price">Pink App</a>
                 <p>Продуктовый лендинг приложения для iOS и&nbsp;Android</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Пинк">9&nbsp;900&nbsp;<span class="rub"></span></a>
@@ -138,8 +137,8 @@
             <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
           <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-barbershop.png" alt="Barbershop-site" class="gallery-img" width="358" height="578" tabindex="-1">
-            <div class="popap-block" tabindex="0">
-              <div class="popap-gallery">
+            <div class="popup-block" tabindex="0">
+              <div class="popup-gallery">
                 <a href="#" target="_blank" title="Подробнее о проекте Барбершоп" class="popap-title-for-price">Barbershop</a>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Барбершоп">9&nbsp;900&nbsp;<span class="rub"></span></a>
@@ -154,8 +153,8 @@
             <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
           <div class="gallery-img-wrapper" tabindex="-1"><img src="img/img-mishka.png" alt="Mishka-site" class="gallery-img" width="358" height="578" tabindex="-1">
-            <div class="popap-block" tabindex="0">
-              <div class="popap-gallery">
+            <div class="popup-block" tabindex="0">
+              <div class="popup-gallery">
                 <a href="#" target="_blank" title="Подробнее о проекте Мишка" class="popap-title-for-price">Mishka</a>
                 <p>Интернет&ndash;магазин вязаных игрушек</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Мишка">9&nbsp;900&nbsp;<span class="rub"></span></a>
@@ -170,8 +169,8 @@
             <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
           <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-aplus.png" alt="A-plus-site" class="gallery-img" width="358" height="578" tabindex="-1">
-            <div class="popap-block" tabindex="0">
-              <div class="popap-gallery">
+            <div class="popup-block" tabindex="0">
+              <div class="popup-gallery">
                 <a href="#" target="_blank" title="Подробнее о проекте А-Плюс" class="popap-title-for-price">A plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта А-Плюс">9&nbsp;900&nbsp;<span class="rub"></span></a>
@@ -186,8 +185,8 @@
             <a href="#" class="gallery-path" tabindex="-1"></a>
           </div>
           <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-kvast.png" alt="Kvast-site" class="gallery-img" width="358" height="578" tabindex="-1">
-            <div class="popap-block" tabindex="0">
-              <div class="popap-gallery">
+            <div class="popup-block" tabindex="0">
+              <div class="popup-gallery">
                 <a href="#" target="_blank" title="Подробнее о проекте Кваст" class="popap-title-for-price">Кваст</a>
                 <p>Промо&ndash;сайт производителя крафтового кваса</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Кваст">9&nbsp;900&nbsp;<span class="rub"></span></a>
@@ -196,7 +195,6 @@
           </div>
         </div>
       </div>
-      <br>
       <!--Прокрутка страниц-->
       <div class="gallery-pagination">
         <a href="#" class="gallery-page">1</a>
@@ -208,28 +206,30 @@
   </div>
   <div class="contacts_catalog">
     <div class="map" id="map" style="width: 100%; height: 416px" tabindex="-1">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729:0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.,+19,+Sankt-Peterburg,+Russia,+191186!5e0!3m2!1sen!2s!4v1441888483426" width="100%" height="416" frameborder="0" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
+      <iframe class="contacts-map-google"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729:0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.,+19,+Sankt-Peterburg,+Russia,+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="1440" height="416" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></iframe>
     </div>
     <div class="container">
       <section class="block-info">
         <h3 class="main-top-info-contacts">Nerds Design Studio</h3>
         <div class="contacts-info">
-          <p class="text-contacts">191186, Санкт-Петербург,<br>
+          <p class="text-contacts">191186, Санкт-Петербург,
             ул. Б.&nbsp;Конюшенная, д. 19/8 </p>
-          <a href="tel:+78122757575" class="link-contacts" title="Телефон компании" tabindex="-1">тел.&nbsp;+7&nbsp;(812)&nbsp;275-75-75</a><br>
+          <a href="tel:+78122757575" class="link-contacts" title="Телефон компании" tabindex="-1">тел.&nbsp;+7&nbsp;(812)&nbsp;275-75-75</a>
         </div>
-        <button class="button-contacts" type="button" aria-label="Напишите нам для обратной связи">Напишите нам</button>
+        <a href="#" class="button-contacts" type="button" title="Напишите нам для обратной связи">Напишите нам</a>
       </section>
-      <!--<div class="map-dot"></div> На Яндекс карте автоматом появляется указатель-->
     </div>
+    <div class="map-dot"></div>
   </div>
   <!--Подвал-->
   <footer class="main-footer container">
     <div class="footer-social">
       <ul class="list-footer">
-        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/vk-icon.svg" alt="Vkontakte" class="social-vk"></a></li>
-        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/fb-icon.svg" alt="Facebook" class="social-fb"></a></li>
-        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/insta-icon.svg" alt="Instagram" class="social-inst"></a></li>
+        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/vk-icon.svg" alt="Vkontakte" class="social-vk" width="26" height="15"></a></li>
+        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/fb-icon.svg" alt="Facebook" class="social-fb" width="12" height="22"></a></li>
+        <li class="item-footer" tabindex="0"><a class="link-footer" href="#" tabindex="-1"><img src="img/insta-icon.svg" alt="Instagram" class="social-inst" width="21" height="21"></a></li>
       </ul>
     </div>
     <section class="footer-text">
@@ -249,7 +249,7 @@
         <input class="login-icon-name" id="username" type="text" name="login-name" placeholder="Имя Фамилия" aria-required="true">
       </p>
       <p class="appointment-item">
-        <label class="appointment " for="login-login">Ваш E-mail:</label>
+        <label class="appointment " for="login-login">Ваш email:</label>
         <input class="login-mail-user" id="login-login" type="email" name="login-email" placeholder="email@example.com" aria-required="true">
       </p>
       <p class="appointment-item-text">
