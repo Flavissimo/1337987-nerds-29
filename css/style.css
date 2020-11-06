@@ -644,15 +644,18 @@ img {
 
 .contacts-map-google {
   border: none;
+  position: absolute;
+  z-index: 40;
   /**как отцентровать карту?*/
 }
 
 .map-dot {
   width: 231px;
   height: 190px;
-  left: 58%;
+  left: 55.5%;
   top: 86px;
   background-image: url("../img/map-marker.png");
+  z-index:20;
 }
 
 .block-info {
@@ -663,6 +666,7 @@ img {
   background-color: var(--basic-background);
   box-sizing: border-box;
   text-align: center;
+  z-index: 50;
 }
 
 .contacts-info {
@@ -992,12 +996,12 @@ img {
 }
 
 .input-radio:focus+.radio-box {
-  background-image: url(../img/radio-off.svg);
+  background-image: url(../img/radio-on.svg);
   opacity: 1
 }
 
 .input-radio:hover+.radio-box {
-  background-image: url(../img/radio-off.svg);
+  background-image: url(../img/radio-on.svg);
   opacity: 1
 }
 
@@ -1037,17 +1041,16 @@ img {
 }
 
 .check-input:focus+.check-box {
-  background-image: url(../img/checkbox-off.svg);
+  background-image: url(../img/checkbox-on.svg);
+  opacity: 1
+}
+.check-input:hover+.check-box {
+  background-image: url(../img/checkbox-on.svg);
   opacity: 1
 }
 
 .check-input:checked:focus+.check-box {
   background-image: url(../img/checkbox-on.svg);
-  opacity: 1
-}
-
-.check-input:hover+.check-box {
-  background-image: url(../img/checkbox-off.svg);
   opacity: 1
 }
 
@@ -1360,7 +1363,7 @@ img {
   justify-content: center;
 }
 
-.popap-title-for-price {
+.popup-title-for-price {
   font-family: 'RobotoBold';
   text-transform: uppercase;
   font-size: 18px;

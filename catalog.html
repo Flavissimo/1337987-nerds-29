@@ -55,28 +55,28 @@
           <label for="number-min"> </label>
           <label for="number-max"> </label>
           <ul class="list-flex-aside">
-            <li class="aside-text"> От<input class="filter-input-text" type="text" name="number-min" value="0" id="number-min"></li>
-            <li class="aside-text"> До<input class="filter-input-text" type="text" name="number-max" value="15000" id="number-max"></li>
+            <li class="aside-text"> От<input class="filter-input-text" type="text" name="min-price" value="0" id="number-min"></li>
+            <li class="aside-text"> До<input class="filter-input-text" type="text" name="max-price" value="15000" id="number-max"></li>
           </ul>
         </fieldset>
 
         <fieldset class="aside-form">
           <legend class="form-title">Сетка:</legend>
-          <label for="rad1" class="radio option"> <input class="input-radio" type="radio" name="grid" value="rad1" id="rad1" checked><span class="radio-box"></span> Адаптивная</label>
-          <label for="rad2" class="radio option"><input class="input-radio" type="radio" name="grid" value="rad2" id="rad2"><span class="radio-box"> </span>Фиксированная</label>
-          <label for="rad3" class="radio option"> <input class="input-radio" type="radio" name="grid" value="rad3" id="rad3"><span class="radio-box"></span> Резиновая</label>
+          <label for="rad1" class="radio option"> <input class="input-radio" type="radio" name="selecting-grid" value="adaptive-grid" id="rad1" checked><span class="radio-box"></span> Адаптивная</label>
+          <label for="rad2" class="radio option"><input class="input-radio" type="radio" name="selecting-grid" value="fixed-grid" id="rad2"><span class="radio-box"> </span>Фиксированная</label>
+          <label for="rad3" class="radio option"> <input class="input-radio" type="radio" name="selecting-grid" value="rubber-grid" id="rad3"><span class="radio-box"></span> Резиновая</label>
         </fieldset>
         <fieldset class="aside-form">
           <legend class="form-title features-form">Особенности:</legend>
-          <label for="features-slider" class="check option"> <input class="check-input" type="checkbox" name="slider" value="a1" id="features-slider" checked><span class="check-box"></span>Слайдер</label>
-          <label for="features-advantages" class="check option"><input class="check-input" type="checkbox" name="advantages" value="a2" id="features-advantages"><span class="check-box"></span>Блок преимуществ</label>
-          <label for="features-news" class="check option"> <input class="check-input" type="checkbox" name="news" value="a3" id="features-news" checked><span class="check-box"></span>Новости</label>
-          <label for="features-gallery" class="check option"><input class="check-input" type="checkbox" name="gallery" value="a4" id="features-gallery" disabled><span class="check-box"></span>Галерея</label>
-          <label for="features-basket" class="check option"><input class="check-input" type="checkbox" name="basket" value="a5" id="features-basket" disabled><span class="check-box"></span>Корзина</label>
+          <label for="features-slider" class="check option"> <input class="check-input" type="checkbox" name="selecting-features" value="slider" id="features-slider" checked><span class="check-box"></span>Слайдер</label>
+          <label for="features-advantages" class="check option"><input class="check-input" type="checkbox" name="selecting-features" value="advantages" id="features-advantages"><span class="check-box"></span>Блок преимуществ</label>
+          <label for="features-news" class="check option"> <input class="check-input" type="checkbox" name="selecting-features" value="news" id="features-news" checked><span class="check-box"></span>Новости</label>
+          <label for="features-gallery" class="check option"><input class="check-input" type="checkbox" name="selecting-features" value="gallery" id="features-gallery"><span class="check-box"></span>Галерея</label>
+          <label for="features-basket" class="check option"><input class="check-input" type="checkbox" name="selecting-features" value="basket" id="features-basket"><span class="check-box"></span>Корзина</label>
         </fieldset>
         <fieldset class="aside-form">
           <label for="filter-submit">
-            <input class="filter-submit" type="submit" name="submit" value="ПОКАЗАТЬ" id="filter-submit">
+            <input class="filter-submit" type="submit" name="show-result" value="ПОКАЗАТЬ" id="filter-submit">
           </label>
         </fieldset>
       </form>
@@ -107,7 +107,7 @@
           <div class="gallery-img-wrapper"> <img src="img/img-sedona.png" alt="Sedona-site" class="gallery-img" width="358" height="578" tabindex="-1">
             <div class="popup-block" tabindex="0">
               <div class="popup-gallery">
-                <a href="#" target="_blank" title="Подробнее о проекте Седона" class="popap-title-for-price">Sedona</a>
+                <a href="#" target="_blank" title="Подробнее о проекте Седона" class="popup-title-for-price">Sedona</a>
                 <p>Информационный сайт для&nbsp;туристов</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Седона">9&nbsp;900 &nbsp;<span class="rub"></span></a>
               </div>
@@ -123,7 +123,7 @@
           <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-pink.png" alt="Pink-site" class="gallery-img" width="358" height="578" tabindex="-1">
             <div class="popup-block" tabindex="0">
               <div class="popup-gallery">
-                <a href="#" target="_blank" title="Подробнее о проекте Пинк" class="popap-title-for-price">Pink App</a>
+                <a href="#" target="_blank" title="Подробнее о проекте Пинк" class="popup-title-for-price">Pink App</a>
                 <p>Продуктовый лендинг приложения для iOS и&nbsp;Android</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Пинк">9&nbsp;900&nbsp;<span class="rub"></span></a>
               </div>
@@ -139,7 +139,7 @@
           <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-barbershop.png" alt="Barbershop-site" class="gallery-img" width="358" height="578" tabindex="-1">
             <div class="popup-block" tabindex="0">
               <div class="popup-gallery">
-                <a href="#" target="_blank" title="Подробнее о проекте Барбершоп" class="popap-title-for-price">Barbershop</a>
+                <a href="#" target="_blank" title="Подробнее о проекте Барбершоп" class="popup-title-for-price">Barbershop</a>
                 <p>Сайт салона красоты. Для мужчин, да.</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Барбершоп">9&nbsp;900&nbsp;<span class="rub"></span></a>
               </div>
@@ -155,7 +155,7 @@
           <div class="gallery-img-wrapper" tabindex="-1"><img src="img/img-mishka.png" alt="Mishka-site" class="gallery-img" width="358" height="578" tabindex="-1">
             <div class="popup-block" tabindex="0">
               <div class="popup-gallery">
-                <a href="#" target="_blank" title="Подробнее о проекте Мишка" class="popap-title-for-price">Mishka</a>
+                <a href="#" target="_blank" title="Подробнее о проекте Мишка" class="popup-title-for-price">Mishka</a>
                 <p>Интернет&ndash;магазин вязаных игрушек</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Мишка">9&nbsp;900&nbsp;<span class="rub"></span></a>
               </div>
@@ -171,7 +171,7 @@
           <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-aplus.png" alt="A-plus-site" class="gallery-img" width="358" height="578" tabindex="-1">
             <div class="popup-block" tabindex="0">
               <div class="popup-gallery">
-                <a href="#" target="_blank" title="Подробнее о проекте А-Плюс" class="popap-title-for-price">A plus</a>
+                <a href="#" target="_blank" title="Подробнее о проекте А-Плюс" class="popup-title-for-price">A plus</a>
                 <p>Лендинг курсов повышения квалификации</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта А-Плюс">9&nbsp;900&nbsp;<span class="rub"></span></a>
               </div>
@@ -187,7 +187,7 @@
           <div class="gallery-img-wrapper" tabindex="-1"> <img src="img/img-kvast.png" alt="Kvast-site" class="gallery-img" width="358" height="578" tabindex="-1">
             <div class="popup-block" tabindex="0">
               <div class="popup-gallery">
-                <a href="#" target="_blank" title="Подробнее о проекте Кваст" class="popap-title-for-price">Кваст</a>
+                <a href="#" target="_blank" title="Подробнее о проекте Кваст" class="popup-title-for-price">Кваст</a>
                 <p>Промо&ndash;сайт производителя крафтового кваса</p>
                 <a href="#" class="price-button" title="Цена за услугу сайта Кваст">9&nbsp;900&nbsp;<span class="rub"></span></a>
               </div>
