@@ -646,7 +646,8 @@ img {
   border: none;
   position: absolute;
   z-index: 40;
-  /**как отцентровать карту?*/
+  width: 100%;
+  /**как отцентровать карту Google?*/
 }
 
 .map-dot {
@@ -655,7 +656,7 @@ img {
   left: 55.5%;
   top: 86px;
   background-image: url("../img/map-marker.png");
-  z-index:20;
+  z-index: 20;
 }
 
 .block-info {
@@ -991,23 +992,22 @@ img {
   opacity: .3
 }
 
-.input-radio:checked+.radio-box {
-  background-image: url(../img/radio-on.svg)
-}
-
 .input-radio:focus+.radio-box {
-  background-image: url(../img/radio-on.svg);
-  opacity: 1
-}
-
-.input-radio:hover+.radio-box {
-  background-image: url(../img/radio-on.svg);
+  background-image: url(../img/radio-off.svg);
   opacity: 1
 }
 
 .input-radio:checked:focus+.radio-box {
-  background-image: url(../img/radio-on.svg);
   opacity: 1
+}
+
+.input-radio:hover+.radio-box {
+  background-image: url(../img/radio-off.svg);
+  opacity: 1
+}
+
+.input-radio:checked+.radio-box {
+  background-image: url(../img/radio-on.svg)
 }
 
 .input-radio:disabled+.radio-box {
@@ -1036,22 +1036,22 @@ img {
   opacity: .3
 }
 
-.check-input:checked+.check-box {
-  background-image: url(../img/checkbox-on.svg)
-}
-
 .check-input:focus+.check-box {
-  background-image: url(../img/checkbox-on.svg);
-  opacity: 1
-}
-.check-input:hover+.check-box {
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url(../img/checkbox-off.svg);
   opacity: 1
 }
 
 .check-input:checked:focus+.check-box {
-  background-image: url(../img/checkbox-on.svg);
   opacity: 1
+}
+
+.check-input:hover+.check-box {
+  background-image: url(../img/checkbox-off.svg);
+  opacity: 1
+}
+
+.check-input:checked+.check-box {
+  background-image: url(../img/checkbox-on.svg)
 }
 
 .check-input:disabled+.check-box {
@@ -1341,16 +1341,8 @@ img {
   transition: transform .2s ease-out
 }
 
-.popup-block:focus {
-  justify-content: center;
-  background: var(--basic-background-header);
-  width: 100%;
-  height: 231px;
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  transform: translateY(100%);
-  transition: transform .2s ease-out
+.gallery-img-wrapper:focus .popup-block {
+  transform: translateY(0)
 }
 
 .gallery-img-wrapper:hover .popup-block {
@@ -1490,7 +1482,8 @@ img {
   height: 590px;
   margin: auto;
   background-color: var(--basic-background);
-  box-shadow: 0 14px 14px 14px rgba(0, 0, 0, .22), 0 10px 10px rgba(0, 0, 0, .25)
+  box-shadow: 0 14px 14px 14px rgba(0, 0, 0, .22), 0 10px 10px rgba(0, 0, 0, .25);
+  z-index: 60;
 }
 
 .modal-heading {
@@ -1648,5 +1641,9 @@ img {
   -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden;
+ overflow: hidden;
 }
+/*Original:   29059 bytes
+Compressed: 24033 bytes (82.70%)
+Saving:     5026 bytes (17.30%)
+Time:       52 ms*/
